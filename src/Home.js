@@ -169,6 +169,7 @@ function Home() {
               <h4 className="proj-cover-titletwo">Bakery Shopping Website</h4>
               <p className="proj-cover-titlethree">Figma | React JS | UX Design | Coding</p>
               <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <h2>test</h2>
             </div>
           </div>
           
