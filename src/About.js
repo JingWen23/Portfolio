@@ -53,7 +53,7 @@ function About() {
             </div>
         </div>
 
-        <div class="content-area">
+        <div className="content-area">
 
         <div className="intro-wrapper-grid">
           <div className="one">

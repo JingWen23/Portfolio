@@ -48,7 +48,7 @@ function Projects() {
 
 
             <div className="projects-wrapper-grid">
-                <Link to="/project/1" className="proj-one">
+                <Link to="/project/2" className="proj-one">
                     <div className="overlay"></div>
                     <img src={ProjThree} className="proj-three-img" alt="Logo" />
                             <div class="content-details fadeIn-bottom">
@@ -63,24 +63,19 @@ function Projects() {
 								<h2 class="content-title">Medicine Reminder App and Responsive Website</h2>
 							</div>
                 </Link>
-                <div className="proj-three">
+                {/* <Link to="/project/3" className="proj-one"> */}
+                <Link to="/project/3" className="proj-three">
                     
                             <div className="overlay"></div>
                         <img src={ProjFour} className="proj-one-img" alt="Logo" />
                                 <div class="content-details fadeIn-bottom">
                                     <h2 class="content-title">Pet Adoption Website</h2>
                                 </div>
-                </div>
+                
+                </Link>
             </div>
 
-            <div className="projects-single-wrapper-grid">
-                {/* <div className="proj-four">
-                        <div className="overlay"></div>
-                        <img src={ProjFour} className="proj-one-img" alt="Logo" />
-                                <div class="content-details fadeIn-bottom">
-                                    <h2 class="content-title">Pet Adoption Website</h2>
-                                </div>
-                </div> */}
+            <Link to="/project/4" className="projects-single-wrapper-grid">
                 <div className="proj-five">
                         <div className="overlay"></div>
                         <img src={ProjFive} className="proj-one-img" alt="Logo" />
@@ -90,7 +85,7 @@ function Projects() {
                 </div>
                     {/* <img src={ProjFour} className="proj-one-img" alt="Logo" />
                     <img src={ProjFive} className="proj-one-img" alt="Logo" /> */}
-            </div>
+            </Link>
 
             {/* <div className="projects-phone-wrapper-grid">
                 <img src={ProjOne} className="proj-one-img" alt="Logo" />
@@ -98,23 +93,31 @@ function Projects() {
             </div> */}
 
             <div className="projects-phone-wrapper-grid">
-                <img src={ProjTwoPhone} className="proj-one-img" alt="Logo" />
-				<h2 class="content-title">Medicine Reminder App and Responsive Website</h2>
+                <Link to="/project/1"  className="proj-two">
+                    <img src={ProjTwoPhone} className="proj-one-img" alt="Logo" />
+                    <h2 class="content-title">Medicine Reminder App and Responsive Website</h2>
+                </Link>
             </div>
 
             <div className="projects-phone-wrapper-grid">
+                <Link to="/project/2"  className="proj-two">
                 <img src={ProjThree} className="proj-one-img" alt="Logo" />
 				<h2 class="content-title">Memory Collection App</h2>
+                </Link>
             </div>
 
             <div className="projects-phone-wrapper-grid">
+                <Link to="/project/3"  className="proj-two">
                 <img src={ProjFour} className="proj-one-img" alt="Logo" />
 				<h2 class="content-title">Pet Adoption Website</h2>
+                </Link>
             </div>
 
             <div className="projects-phone-wrapper-grid">
+                <Link to="/project/4"  className="proj-two">
                 <img src={ProjFive} className="proj-one-img" alt="Logo" />
 				<h2 class="content-title">Bakery Shopping Website</h2>
+                </Link>
             </div>
 
 
