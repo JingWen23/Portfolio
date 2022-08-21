@@ -163,10 +163,6 @@ body {
   margin-bottom: 0;
 }
 
-.menu-list:active {
-  border-left: solid 1px tomato;
-}
-
 .menu-list:hover {
   margin-left: 4rem;
   transition: 0.4s;
@@ -198,6 +194,7 @@ body {
   letter-spacing: 0.5rem;
   font-size: 1.9rem;
   color: black;
+  padding-left: 1vw;
   /* text-decoration: none; */
 }
 
@@ -223,7 +220,7 @@ body {
   }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 373px) {
   .menu-list p {
     display: block;
     margin: 0.5rem 2rem;
@@ -238,6 +235,7 @@ body {
     margin-left: 0;
     color: #c2c2c2;
   }
+
 }
 
 /* Home Section Navbar */
@@ -275,6 +273,12 @@ body {
 .home-link:hover {
   color: #c2c2c2;
 }
+
+.active{
+  border-left: solid 5px #AB926C;
+  margin: 0 2.2vw;
+  padding: 1vw 0;
+ }
 
 @media (max-width: 768px) {
   .home-container {
