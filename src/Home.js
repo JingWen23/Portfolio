@@ -21,11 +21,14 @@ const contentStyle = {
     };
 
 function Home() {
-    const homeIntro = useRef(null);
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
+  const homeIntro = useRef(null);
   const projoneIntro = useRef(null);
   const projtwoIntro = useRef(null);
   const projthreeIntro = useRef(null);
-  // const projfourIntro = useRef(null);
   const projfiveIntro = useRef(null);
 
   const scrollToSection = (elementRef) => {
@@ -35,7 +38,7 @@ function Home() {
         });
       };
 
-    return (
+  return (
     <div>
         <Link to="/"><img src={Logo} className="logo-home" alt="Logo" /></Link>
     <div className="home-container">
