@@ -83,7 +83,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .01</h5>
               <h4 className="proj-cover-titletwo">Medicine Reminder App and Responsive Website</h4>
               <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/1" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
@@ -108,7 +108,8 @@ function Home() {
             <h5 className="proj-cover-titleone">Project .02</h5>
             <h4 className="proj-cover-titletwo">Memory Collection App</h4>
             <p className="proj-cover-titlethree">Figma | React Native | UX Design | Coding</p>
-            <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+            <Link to="/project/2" className="proj-cover-titlefour">VIEW PROJECT + </Link>
+            {/* <p className="proj-cover-titlefour">VIEW PROJECT + </p> */}
           </div>
         </div>
 
@@ -118,7 +119,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .02</h5>
               <h4 className="proj-cover-titletwo">Memory Collection App</h4>
               <p className="proj-cover-titlethree">Figma | React Native | UX Design | Coding</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/2" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
@@ -128,7 +129,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .03</h5>
               <h4 className="proj-cover-titletwo">Pet Adoption Website</h4>
               <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/3" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
           </div>
           <div className="two">
@@ -142,7 +143,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .03</h5>
               <h4 className="proj-cover-titletwo">Pet Adoption Website</h4>
               <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/3" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
@@ -155,7 +156,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .04</h5>
               <h4 className="proj-cover-titletwo">Bakery Shopping Website</h4>
               <p className="proj-cover-titlethree">Figma | React JS | UX Design | Coding</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/4" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
           </div>
         </div>
@@ -166,7 +167,7 @@ function Home() {
               <h5 className="proj-cover-titleone">Project .04</h5>
               <h4 className="proj-cover-titletwo">Bakery Shopping Website</h4>
               <p className="proj-cover-titlethree">Figma | React Native | UX Design | Coding</p>
-              <p className="proj-cover-titlefour">VIEW PROJECT + </p>
+              <Link to="/project/4" className="proj-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
