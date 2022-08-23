@@ -3,23 +3,8 @@ import React, {useEffect, useState, useRef} from 'react';
 import { render } from "react-dom";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
-import HomeIntro from "./asset/HomeIntro.png";
-import AboutIntro from "./asset/AboutIntro.jpg";
 import Logo from "./asset/Logo.png";
-import ProjOne from "./asset/ProjOne.png";
-import ProjOneScreen1 from "./asset/ProjOneScreen1.jpg";
-import ProjOneScreen2 from "./asset/ProjOneScreen2.png";
-import ProjOneScreen3 from "./asset/ProjOneScreen3.png";
-import ProjOneScreen4 from "./asset/ProjOneScreen4.png";
-import ProjOneScreen5 from "./asset/ProjOneScreen5.png";
-import ProjOnePersona from "./asset/ProjOnePersona.png"
-import ProjOnePrototype from "./asset/ProjOnePrototype.png";
-import ProjOneResponsive from "./asset/ProjOneResponsive.jpg";
-import ProjOneSitemap from "./asset/ProjOneSitemap.jpeg";
-import ProjTwo from "./asset/ProjTwo.jpg";
-import ProjThree from "./asset/ProjThree.jpg";
-import ProjFour from "./asset/ProjFour.png";
-import ProjFive from "./asset/ProjFive.jpg";
+import ProjThreePaperWireframe from "./asset/ProjThreePaperWireframe.png";
 import ProjThreeIntro from "./asset/ProjThreeIntro.mp4";
 import ProjThreeDigitalWireframe from "./asset/ProjThreeDigitalWireframe.jpg"
 import ProjThreeDigitalWireframeSmall from "./asset/ProjThreeDigitalWireframeSmall.jpg"
@@ -170,7 +155,7 @@ function ProjectThree() {
                     <div className="projthree-section-three-container">
                         <h5 className="proj-section-subtitle">Paper Wireframes</h5>
                         <p className="proj-section-content">Paper wireframes were sketched for each screen of the website. Different designs were constructed to explore the possibilities. </p>
-                        <img src={ProjOnePrototype} className="projone-prototype-img" alt="Logo" />
+                        <img src={ProjThreePaperWireframe} className="projone-prototype-img" alt="Logo" />
                     </div>
                     <div className="projthree-section-three-container">
                         <h5 className="proj-section-subtitle">Digital Wireframes</h5>
@@ -319,7 +304,7 @@ function ProjectThree() {
             </div>
             </div>
 
-            <div ref={projConclusion} className="proj-section-container" data-aos="fade-in">
+            <div ref={projConclusion} className="proj-section-container">
                 <h2 className="proj-section-title">Conclusion</h2>
 
                 <div className="projone-section-three">

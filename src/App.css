@@ -352,11 +352,6 @@ body {
   /* background-color: cornflowerblue; */
 }
 
-.one,
-.one-three {
-  /* background-color: coral; */
-}
-
 .projone-phone-wrapper-grid {
   display: none;
 }
@@ -746,14 +741,14 @@ body {
     height: auto;
   }
   .projone-cover-img {
-    width: 80%;
+    width: 69%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .projtwo-cover-img {
-    width: 40%;
+    width: 50%;
     height: auto;
     margin-bottom: 3rem;
   }
@@ -853,13 +848,9 @@ body {
   .home-intro-img {
     width: 60%;
   }
-  .projone-cover-img {
+  /* .projone-cover-img {
     width: 90%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  } */
   .projtwo-cover-img {
     width: 50%;
   }
@@ -921,15 +912,14 @@ body {
     width: 70%;
   }
   .projtwo-phone-wrapper-grid {
-    margin-top: 2vh;
+    margin-top: 8vh;
     display: block;
     width: 70%;
   }
   .projthree-phone-wrapper-grid {
-    margin-top: 10vh;
+    margin-top: 7vh;
     display: block;
     width: 70%;
-    height: 49vh;
   }
   .projfour-phone-wrapper-grid {
     margin-top: 0vh;
@@ -937,7 +927,7 @@ body {
     width: 70%;
   }
   .projfive-phone-wrapper-grid {
-    margin-top: 12vh;
+    margin-top: 8vh;
     display: block;
     width: 70%;
   }
@@ -950,7 +940,7 @@ body {
 }
 
 @media (max-width: 320px) {
-  .content-area {
+  /* .content-area {
     margin-left: 0rem;
   }
 
@@ -962,38 +952,31 @@ body {
     grid-template-columns: 2.5fr 3fr;
     grid-gap: 15px;
     width: 90%;
-    /* height: 20vh; */
     margin-top: 15vh;
     
   }
   .projone-phone-wrapper-grid {
-    /* margin-top: 7vh; */
     display: block;
     width: 70%;
     height: auto;
   }
   .projone-phone-wrapper-grid,
   .projtwo-phone-wrapper-grid {
-    /* margin-top: 7vh; */
     display: block;
     width: 70%;
     height: auto;
   }
   .projthree-phone-wrapper-grid {
-    /* margin-top: 12vh; */
     display: block;
     width: 70%;
     height: auto;
-    /* height: 50vh; */
   }
   .projfour-phone-wrapper-grid {
-    /* margin-top: 0; */
     display: block;
     width: 70%;
     height: auto;
   }
   .projfive-phone-wrapper-grid {
-    /* margin-top: 12vh; */
     display: block;
     width: 70%;
     height: auto;
@@ -1036,14 +1019,14 @@ body {
     letter-spacing: 1.5px;
   }
   .proj-cover-titlethree {
-    /* line-height: 0; */
     font-size: 0.9rem;
-    padding: 0 0 0.2rem 0;
+    padding: 0 0 0 0;
+
   }
   .proj-cover-titlefour {
     line-height: 0;
     font-size: 1rem;
-  }
+  } */
 }
 
 

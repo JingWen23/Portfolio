@@ -3,19 +3,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import { render } from "react-dom";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
-import HomeIntro from "./asset/HomeIntro.png";
-import AboutIntro from "./asset/AboutIntro.jpg";
 import Logo from "./asset/Logo.png";
-import ProjOne from "./asset/ProjOne.png";
-import ProjOneScreen1 from "./asset/ProjOneScreen1.jpg";
-import ProjOneScreen2 from "./asset/ProjOneScreen2.png";
-import ProjOneScreen3 from "./asset/ProjOneScreen3.png";
-import ProjOneScreen4 from "./asset/ProjOneScreen4.png";
-import ProjOneScreen5 from "./asset/ProjOneScreen5.png";
-import ProjOnePersona from "./asset/ProjOnePersona.png"
-import ProjOnePrototype from "./asset/ProjOnePrototype.png";
-import ProjOneResponsive from "./asset/ProjOneResponsive.jpg";
-import ProjOneSitemap from "./asset/ProjOneSitemap.jpeg";
 import ProjTwoMain from "./asset/ProjTwoMain.jpg";
 import ProjTwoStoryboard from "./asset/ProjTwoStoryboard.jpeg";
 import ProjTwoWireframe1 from "./asset/ProjTwoWireframe1.jpg";
@@ -27,11 +15,6 @@ import ProjTwoHome from "./asset/ProjTwoHome.png";
 import ProjTwoAlbum from "./asset/ProjTwoAlbum.png";
 import ProjTwoAdd from "./asset/ProjTwoAdd.png";
 import ProjTwoDetail from "./asset/ProjTwoDetail.png";
-import ProjTwo from "./asset/ProjTwo.jpg";
-import ProjThree from "./asset/ProjThree.jpg";
-import ProjFour from "./asset/ProjFour.png";
-import ProjFive from "./asset/ProjFive.jpg";
-import ProjOneIntro from "./asset/ProjOneIntro.mp4";
 import NavMenu from "./NavMenu";
 import "./App.css";
 import AOS from 'aos';
@@ -328,13 +311,6 @@ function ProjectTwo() {
     </Popup>
       </div>
     )
-//   return (
-//     <div>
-//       <h1>This is the home page</h1>
-//       <Link to="about">Click to view our about page</Link>
-//       <Link to="contact">Click to view our contact page</Link>
-//     </div>
-//   );
 }
 
 export default ProjectTwo;

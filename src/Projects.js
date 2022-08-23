@@ -3,10 +3,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import { render } from "react-dom";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
-import HomeIntro from "./asset/HomeIntro.png";
-import AboutIntro from "./asset/AboutIntro.jpg";
 import Logo from "./asset/Logo.png";
-import ProjOne from "./asset/ProjOne.png";
 import ProjTwo from "./asset/ProjTwo.jpg";
 import ProjTwoPhone from "./asset/ProjTwoPhone.png";
 import ProjThree from "./asset/ProjThree.jpg";
@@ -142,13 +139,6 @@ function Projects() {
     </Popup>
       </div>
     )
-//   return (
-//     <div>
-//       <h1>This is the home page</h1>
-//       <Link to="about">Click to view our about page</Link>
-//       <Link to="contact">Click to view our contact page</Link>
-//     </div>
-//   );
 }
 
 export default Projects;

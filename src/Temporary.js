@@ -3,15 +3,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import { render } from "react-dom";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
-import HomeIntro from "./asset/HomeIntro.png";
-import AboutIntro from "./asset/AboutIntro.jpg";
 import Logo from "./asset/Logo.png";
-import ProjOne from "./asset/ProjOne.png";
-import ProjTwo from "./asset/ProjTwo.jpg";
-import ProjTwoPhone from "./asset/ProjTwoPhone.png";
-import ProjThree from "./asset/ProjThree.jpg";
-import ProjFour from "./asset/ProjFour.png";
-import ProjFive from "./asset/ProjFive.jpg";
 import NavMenu from "./NavMenu";
 import "./App.css";
 
@@ -33,15 +25,7 @@ function Temporary() {
         </div>
 
         <div className="temporary-content-area">
-            
             <h2 className="temporary-title">Under construction...</h2>
-
-{/* 
-        <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
-          <li className="projects-footer-link-two">LinkedIn</li>
-          <li className="projects-footer-link-two">Email</li>
-        </ul> */}
         </div>
 
       <Popup
