@@ -24,8 +24,10 @@ export default ({ close }) => (
         </NavLink>
       </li>
       <li className="menu-list">
-        <p className="menu-code">Chapter .04</p>
-        <p className="menu-title">Resume</p>
+        <NavLink to ="/resume">
+          <p className="menu-code">Chapter .04</p>
+          <p className="menu-title">Resume</p>
+        </NavLink>
       </li>
     </ul>
   </div>

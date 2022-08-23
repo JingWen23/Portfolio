@@ -6,6 +6,7 @@ import ProjectOne from "./ProjectOne"
 import ProjectTwo from "./ProjectTwo"
 import ProjectThree from "./ProjectThree"
 import ProjectFour from "./ProjectFour"
+import Temporary from "./Temporary"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/project/2" element={ <ProjectTwo/> } />
           <Route path="/project/3" element={ <ProjectThree/> } />
           <Route path="/project/4" element={ <ProjectFour/> } />
+          <Route path="/resume" element={ <Temporary/> } />
         </Routes>
       </BrowserRouter>
     </div>

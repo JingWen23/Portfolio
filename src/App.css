@@ -2462,6 +2462,35 @@ body {
   margin-left: 13vw;
 }
 
+/* _______________________________________________________________________________________ */
+
+/* Resume */
+
+.temporary-title {
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  letter-spacing: 0.3vw;
+  font-size: 1.5vw;
+  line-height: 2;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin: auto; */
+}
+
+.temporary-content-area {
+  /* margin-left: 13rem; */
+  display: flex;
+  margin: auto;
+  /* margin-top: 7vw; */
+}
+
+
+
 
 
 
