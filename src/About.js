@@ -6,6 +6,7 @@ import BurgerIcon from "./BurgerIcon";
 import HomeIntro from "./asset/HomeIntro.png";
 import AboutIntro from "./asset/AboutIntro.jpg";
 import Logo from "./asset/Logo.png";
+import ButtonMailTo from "./component/ButtonMailTo";
 // import ProjOneCover from "./asset/ProjOneCover.jpg";
 // import ProjTwoCover from "./asset/ProjTwoCover.png";
 // import ProjThreeCover from "./asset/ProjThreeCover.jpg";
@@ -23,12 +24,9 @@ const contentStyle = {
 
 function About() {
 
-  const homeIntro = useRef(null);
-  const projoneIntro = useRef(null);
-  const projtwoIntro = useRef(null);
-  const projthreeIntro = useRef(null);
-  const projfourIntro = useRef(null);
-  const projfiveIntro = useRef(null);
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
 
   const scrollToSection = (elementRef) => {
         window.scrollTo({
@@ -209,14 +207,10 @@ function About() {
             <p className="about-title-uni">2022.08 - Present</p>
         </div>
 
-
-
-
-
         <ul className="footer">
           <li className="footer-link">© 2022 Jing Wen Ng </li>
-          <li className="footer-link-two">LinkedIn</li>
-          <li className="footer-link-two">Email</li>
+          <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
+          <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
         </div>
 

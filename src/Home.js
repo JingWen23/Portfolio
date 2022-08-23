@@ -11,6 +11,7 @@ import ProjThreeCover from "./asset/ProjThreeCover.jpg";
 // import ProjFourCover from "./asset/ProjFourCover.jpg";
 import ProjFiveCover from "./asset/ProjFiveCover.jpg";
 import NavMenu from "./NavMenu";
+import ButtonMailTo from "./component/ButtonMailTo";
 import "./App.css";
 
 
@@ -176,8 +177,8 @@ function Home() {
 
         <ul className="footer">
           <li className="footer-link">© 2022 Jing Wen Ng </li>
-          <li className="footer-link-two">LinkedIn</li>
-          <li className="footer-link-two">Email</li>
+          <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
+          <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
       </div>
 

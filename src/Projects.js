@@ -10,6 +10,7 @@ import ProjThree from "./asset/ProjThree.jpg";
 import ProjFour from "./asset/ProjFour.png";
 import ProjFive from "./asset/ProjFive.jpg";
 import NavMenu from "./NavMenu";
+import ButtonMailTo from "./component/ButtonMailTo";
 import "./App.css";
 
 
@@ -20,6 +21,10 @@ const contentStyle = {
     };
 
 function Projects() {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
 
     return (
     <div>
@@ -123,8 +128,8 @@ function Projects() {
 
         <ul className="projects-footer">
           <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
-          <li className="projects-footer-link-two">LinkedIn</li>
-          <li className="projects-footer-link-two">Email</li>
+          <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
+          <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
         </div>
 

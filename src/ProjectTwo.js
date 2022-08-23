@@ -4,6 +4,7 @@ import { render } from "react-dom";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
 import Logo from "./asset/Logo.png";
+import ButtonMailTo from "./component/ButtonMailTo";
 import ProjTwoMain from "./asset/ProjTwoMain.jpg";
 import ProjTwoStoryboard from "./asset/ProjTwoStoryboard.jpeg";
 import ProjTwoWireframe1 from "./asset/ProjTwoWireframe1.jpg";
@@ -51,6 +52,10 @@ const contentStyle = {
     };
 
 function ProjectTwo() {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
 
     const projIntro = useRef(null);
     const projOverview = useRef(null);
@@ -295,8 +300,8 @@ function ProjectTwo() {
 
         <ul className="projects-footer">
           <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
-          <li className="projects-footer-link-two">LinkedIn</li>
-          <li className="projects-footer-link-two">Email</li>
+          <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
+          <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
         </div>
 
