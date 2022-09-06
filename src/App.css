@@ -70,12 +70,12 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .burger-menu .bar1,
   .bar2,
   .bar3 {
-    width: 16px;
-    height: 1.5px;
+    width: 18px;
+    height: 2px;
     background-color: #333;
     margin: 3px 0;
     transition: 0.4s;
@@ -90,15 +90,14 @@ body {
   }
 
   .burger-menu.open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(0px, 0px);
-    transform: rotate(-45deg) translate(0px, 0px);
+    -webkit-transform: rotate(-45deg) translate(-1px, 1px);
+    transform: rotate(-45deg) translate(-1px, 1px);
   }
   
   .burger-menu.open .bar2 {
     opacity: 0;
   }
 }
-
 
 @media (max-width: 368px) {
   /* .burger-menu .bar1,
@@ -325,6 +324,16 @@ body {
 
 .home-intro-titleone {
   color: #a58e68;
+}
+
+.one-intro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.two-intro {
+  justify-content: center;
 }
 
 .one {
@@ -689,7 +698,7 @@ body {
   }
   .projone-phone-wrapper-grid,
   .projfive-phone-wrapper-grid {
-    margin-top: 10vh;
+    margin: 10vh 0;
     display: block;
     width: 85%;
     justify-content: center;
@@ -703,7 +712,7 @@ body {
   }
   .projtwo-phone-wrapper-grid,
   .projthree-phone-wrapper-grid {
-    margin-top: 5vh;
+    margin: 10vh 0;
     display: block;
     /* height: 55vh; */
     width: 85%;
@@ -715,7 +724,7 @@ body {
     overflow: hidden;
   }
   .projfour-phone-wrapper-grid {
-    margin-top: 5vh;
+    margin: 5vh 0;
     display: block;
     /* height: 55vh; */
     width: 85%;
@@ -788,13 +797,14 @@ body {
     font-size: 0.9rem;
     padding: 0;
     margin-top: -1rem;
+    margin-bottom: 1vw;
   }
   .proj-cover-titlefour {
     font-size: 0.8rem;
     line-height: 0;
   }
 
-  /* .footer {
+  .footer {
     margin-top: 5vh;
   }
   .footer-link,
@@ -804,7 +814,7 @@ body {
   }
   .footer-link-two {
     padding: 0 0 0 1rem;
-  } */
+  }
 }
 
 @media (max-width: 425px) {
@@ -816,19 +826,62 @@ body {
     display: none;
   }
 
-  .wrapper-grid {
-    grid-template-columns: 2.5fr 3fr;
-    grid-gap: 15px;
-    width: 90%;
-    height: 20vh;
-    margin-top: 15vh;
+  .logo-home {
+    display: none;
   }
-  .projone-phone-wrapper-grid,
-  .projtwo-phone-wrapper-grid {
-    margin-top: 7vh;
+
+  .wrapper-grid {
     display: block;
+    margin-top: 20vh;
+  }
+
+  .one-intro {
+    justify-content: center;
+  }
+
+  .home-intro-img {
+    width: 45%;
+  }
+
+  .home-intro-titleone,
+  .home-intro-titletwo {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+
+  .home-intro-titleone {
+    margin-top: 5vw;
+  }
+
+  .projone-phone-wrapper-grid {
+    margin-top: 30vh;
+  }
+
+  .projone-cover-img {
+    width: 90%;
+  }
+  .projtwo-cover-img {
     width: 70%;
   }
+  .projthree-cover-img {
+    width: 100%;
+  }
+  .projfour-cover-img {
+    width: 100%;
+  }
+  .projfive-cover-img {
+    width: 100%;
+  }
+  .footer-link,
+  .footer-link-two {
+    font-size: 3vw;
+  }
+
+
+  
+
+  /* 
+  
   .projthree-phone-wrapper-grid {
     margin-top: 7vh;
     display: block;
@@ -845,12 +898,10 @@ body {
     width: 70%;
   }
 
-  .home-intro-img {
-    width: 60%;
-  }
-  /* .projone-cover-img {
+  
+  .projone-cover-img {
     width: 90%;
-  } */
+  }
   .projtwo-cover-img {
     width: 50%;
   }
@@ -878,7 +929,7 @@ body {
     letter-spacing: 1.5px;
   }
   .proj-cover-titlethree {
-    /* line-height: 0; */
+    line-height: 0;
     font-size: 0.9rem;
     padding: 0 0 0.2rem 0;
   }
@@ -887,21 +938,21 @@ body {
     font-size: 1rem;
   }
 
-  .logo-home {
-    display: none;
-  }
+  
 
   .footer {
     margin-top: 10vw;
     width: 85%;
-    /* margin-left: auto;
-    margin-right: auto; */
-  }
+    margin-left: auto;
+    margin-right: auto;
+  } */
 }
 
 @media (max-width: 362px) {
-  .wrapper-grid {
-    /* grid-template-columns: 2fr 2fr; */
+  /* .wrapper-grid {
+    display: block;
+    background-color: #3955d9;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 15px;
     width: 90%;
     margin-top: 12vh;
@@ -937,6 +988,12 @@ body {
     font-size: 1.1rem;
     letter-spacing: 0.2rem;
   }
+
+  .home-intro-img {
+    width: 70%;
+    height: auto;
+  } */
+
 }
 
 @media (max-width: 320px) {

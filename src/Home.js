@@ -84,10 +84,10 @@ function Home() {
       <div class="content-area">
 
         <div ref={homeIntro} className="wrapper-grid">
-          <div className="one">
+          <div className="one-intro">
             <img src={HomeIntro} className="home-intro-img" alt="Logo" />
           </div>
-          <div className="two">
+          <div className="two-intro">
             <h2 className="home-intro-titleone">UX Designer</h2>
             <h2 className="home-intro-titletwo">App Developer</h2>
           </div>
