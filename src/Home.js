@@ -110,23 +110,12 @@ function Home() {
         <div className="projone-phone-wrapper-grid">
             <img src={ProjOneCover} className="projone-cover-img" alt="Logo" />
             <div>
-              <h5 className="proj-cover-titleone">Project .01</h5>
-              <h4 className="proj-cover-titletwo">Medicine Reminder App and Responsive Website</h4>
-              <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <Link to="/project/1" className="proj-cover-titlefour">VIEW PROJECT + </Link>
+              <h5 className="proj-phone-cover-titleone">Project .01</h5>
+              <h4 className="proj-phone-cover-titletwo">Medicine Reminder App and Responsive Website</h4>
+              <p className="proj-phone-cover-titlethree">Figma | UX Design</p>
+              <Link to="/project/1" className="proj-phone-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
-
-
-        {/* <div className="projone-phone-wrapper-grid">
-            <img src={ProjOneCover} className="projone-cover-img" alt="Logo" />
-            <div>
-              <h5 className="proj-cover-titleone">Project .01</h5>
-              <h4 className="proj-cover-titletwo">Medicine Reminder App and Responsive Website</h4>
-              <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <Link to="/project/1" className="proj-cover-titlefour">VIEW PROJECT + </Link>
-            </div>
-        </div> */}
 
         <div ref={projtwoIntro} className="projfour-wrapper-grid" data-aos="fade-in">
           <div className="one">
@@ -146,10 +135,10 @@ function Home() {
         <div className="projtwo-phone-wrapper-grid">
             <img src={ProjTwoCover} className="projtwo-cover-img" alt="Logo" />
             <div>
-              <h5 className="proj-cover-titleone">Project .02</h5>
-              <h4 className="proj-cover-titletwo">Memory Collection App</h4>
-              <p className="proj-cover-titlethree">Figma | React Native | UX Design | Coding</p>
-              <Link to="/project/2" className="proj-cover-titlefour">VIEW PROJECT + </Link>
+              <h5 className="proj-phone-cover-titleone">Project .02</h5>
+              <h4 className="proj-phone-cover-titletwo">Memory Collection App</h4>
+              <p className="proj-phone-cover-titlethree">Figma | React Native | UX Design | Coding</p>
+              <Link to="/project/2" className="proj-phone-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
@@ -170,10 +159,10 @@ function Home() {
         <div className="projthree-phone-wrapper-grid">
             <img src={ProjThreeCover} className="projthree-cover-img" alt="Logo" />
             <div>
-              <h5 className="proj-cover-titleone">Project .03</h5>
-              <h4 className="proj-cover-titletwo">Pet Adoption Website</h4>
-              <p className="proj-cover-titlethree">Figma | UX Design</p>
-              <Link to="/project/3" className="proj-cover-titlefour">VIEW PROJECT + </Link>
+              <h5 className="proj-phone-cover-titleone">Project .03</h5>
+              <h4 className="proj-phone-cover-titletwo">Pet Adoption Website</h4>
+              <p className="proj-phone-cover-titlethree">Figma | UX Design</p>
+              <Link to="/project/3" className="proj-phone-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 
@@ -194,10 +183,10 @@ function Home() {
         <div className="projfive-phone-wrapper-grid">
             <img src={ProjFiveCover} className="projfive-cover-img" alt="Logo" />
             <div>
-              <h5 className="proj-cover-titleone">Project .04</h5>
-              <h4 className="proj-cover-titletwo">Bakery Shopping Website</h4>
-              <p className="proj-cover-titlethree">Figma | React Native | UX Design | Coding</p>
-              <Link to="/project/4" className="proj-cover-titlefour">VIEW PROJECT + </Link>
+              <h5 className="proj-phone-cover-titleone">Project .04</h5>
+              <h4 className="proj-phone-cover-titletwo">Bakery Shopping Website</h4>
+              <p className="proj-phone-cover-titlethree">Figma | React Native | UX Design | Coding</p>
+              <Link to="/project/4" className="proj-phone-cover-titlefour">VIEW PROJECT + </Link>
             </div>
         </div>
 

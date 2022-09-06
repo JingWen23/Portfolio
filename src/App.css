@@ -408,7 +408,45 @@ body {
   color: black;
 }
 
-.proj-cover-titlefour:hover {
+.proj-phone-cover-titleone {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-align: left;
+  font-size: 1.3vw;
+}
+
+.proj-phone-cover-titletwo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #a58e68;
+  line-height: 1.25;
+  font-size: 2vw;
+}
+
+.proj-phone-cover-titlethree {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: left;
+  padding-bottom: 2rem;
+  color: #b6b6b6;
+  font-size: 0.8vw;
+}
+
+.proj-phone-cover-titlefour {
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 0.9vw;
+  text-decoration: none;
+  color: black;
+}
+
+.proj-phone-cover-titlefour:hover {
   letter-spacing: 5px;
   transition: 0.3s;
   cursor: pointer;
@@ -783,23 +821,23 @@ body {
     margin-bottom: 1rem;
     letter-spacing: 0.3rem;
   }
-  .proj-cover-titleone {
+  .proj-phone-cover-titleone {
     line-height: 1;
     letter-spacing: 2px;
     font-size: 1.3rem;
   }
-  .proj-cover-titletwo {
+  .proj-phone-cover-titletwo {
     font-size: 1.8rem;
     letter-spacing: 1.5px;
     margin-top: -1vh;
   }
-  .proj-cover-titlethree {
+  .proj-phone-cover-titlethree {
     font-size: 0.9rem;
     padding: 0;
     margin-top: -1rem;
     margin-bottom: 1vw;
   }
-  .proj-cover-titlefour {
+  .proj-phone-cover-titlefour {
     font-size: 0.8rem;
     line-height: 0;
   }
@@ -876,6 +914,24 @@ body {
   .footer-link-two {
     font-size: 3vw;
   }
+
+  .proj-phone-cover-titleone {
+    line-height: 1;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+  }
+  .proj-phone-cover-titletwo {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+  .proj-phone-cover-titlethree {
+    font-size: 1.2rem;
+    padding-bottom: 1.4vw;
+  }
+  .proj-phone-cover-titlefour {
+    font-size: 1.1rem;
+  }
+
 
 
   
