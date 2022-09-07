@@ -200,12 +200,12 @@ function About() {
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">In Learning</h5>
             <h5 className="about-title-degree">Digital Illustration</h5>
             <p className="about-title-degreename">Procreate</p>
             <p className="about-title-uni">2022.08 - Present</p>
-        </div>
+        </div> */}
 
         <ul className="projects-footer">
           <li className="footer-link">© 2022 Jing Wen Ng </li>
