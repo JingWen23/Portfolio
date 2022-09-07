@@ -111,20 +111,20 @@ function ProjectOne() {
                 <h2 className="proj-section-title">Project Overview</h2>
 
                 <div className="projone-section-one">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Problem</h5>
                         <p className="proj-section-content">Large amount of the population <span className="proj-section-content-bold">have trouble adhering to their medication schedule </span>
                         and this can often lead to not only serious health consequences, but also waste of medicines. </p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Target Audience</h5>
                         <p className="proj-section-content">Adults and seniors who occasionally <span className="proj-section-content-bold">forget to take their medicine</span>, and would like to have a dedicated reminder that prompt them to take their medications. </p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Goal</h5>
                         <p className="proj-section-content">Design an app that <span className="proj-section-content-bold">reminds people to take their medicine</span> and help them follow their assigned medication schedule. </p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">My Role</h5>
                         <p className="proj-section-content">UX designer / researcher designing the app and responsive website from conception to delivery.</p>
                     </div>
@@ -151,7 +151,7 @@ function ProjectOne() {
                 <h2 className="proj-section-title">Starting the Design</h2>
 
                 <div className="projone-section-three">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Digital Wireframes</h5>
                         <p className="proj-section-content">The first set of wireframes focuses on the screens users would encounter when adding a new medicine reminder.</p>
                         <img src={ProjOneScreen1} className="projone-screen-one-img" alt="Logo" />
@@ -170,14 +170,14 @@ function ProjectOne() {
                 <h2 className="proj-section-title">Usability Study</h2>
 
                 <div className="projone-section-three">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Research Goal</h5>
                         <p className="proj-section-content">To figure out what difficulties users encounter when attempting to a new medicine reminder to the app.</p>
                     </div>
                 </div>
 
                 <div className="projone-section-three">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Methodology</h5>
 
                         <table class="u-full-width">
@@ -205,20 +205,44 @@ function ProjectOne() {
                             </tbody>
                         </table>
 
+                        <div className="projone-methodology-phone">
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Study type:</p>
+                                <p className="proj-section-table-content">Unmoderated</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Location:</p>
+                                <p className="proj-section-table-content">Malaysia, remote (participants will go through the usability study in their own homes)</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Date:</p>
+                                <p className="proj-section-table-content">Sessions will take place between July 15 to July 20</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Details:</p>
+                                <p className="proj-section-table-content">6 participants will add a medicine reminder to the app. They will then be requested to complete the questionnaire on the satisfaction rate. </p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Duration:</p>
+                                <p className="proj-section-table-content">15-20 minutes</p>
+                            </div>
+
+                        </div>
+
                         <h5 className="proj-section-findings-title">Main Findings</h5>
                         <div className="proj-section-findings">
                             
-                            <div>
+                            <div className="proj-findings-container">
                                 <h5 className="proj-section-findings-subtitle">1</h5>
                                 <p className="proj-section-findings-content-one">Label icons</p>
                                 <p className="proj-section-findings-content-two">People prefer using labelled icons when navigating.</p>
                             </div>
-                            <div>
+                            <div className="proj-findings-container">
                                 <h5 className="proj-section-findings-subtitle">2</h5>
                                 <p className="proj-section-findings-content-one">Add medicine appearance</p>
                                 <p className="proj-section-findings-content-two">People would like to select how the medicine look like.</p>
                             </div>
-                            <div>
+                            <div className="proj-findings-container">
                                 <h5 className="proj-section-findings-subtitle">3</h5>
                                 <p className="proj-section-findings-content-one">Edit Reminders</p>
                                 <p className="proj-section-findings-content-two">People would like to edit the info they’ve added for their reminders.</p>
@@ -306,7 +330,7 @@ function ProjectOne() {
         </div>
 
         <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
+          <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>

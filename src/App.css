@@ -2032,12 +2032,9 @@ body {
   margin: auto;
 }
 
-
-
-
-
-
-
+.projone-methodology-phone {
+  display: none;
+}
 
 .projects-footer {
   list-style-type: none;
@@ -2101,12 +2098,186 @@ body {
 }
 
 @media (max-width: 425px) {
+  .proj-title {
+    text-align: left;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    letter-spacing: 0.4vw;
+    font-size: 4vw;
+    line-height: 2;
+    text-transform: uppercase;
+  }
+
+  .proj-subtitle {
+    text-align: left;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    letter-spacing: 0.55vw;
+    font-size: 3vw;
+    margin: 2vw 0;
+    /* line-height: 1.4; */
+  }
+  
+  .proj-duration {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    text-align: left;
+    color: #b6b6b6;
+    font-size: 2.25vw;
+  }
+
+  .proj-section-title {
+    text-align: left;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    letter-spacing: 0.28vw;
+    font-size: 4vw;
+    margin-bottom: 0;
+    border-left: solid 0.7vw #D8CEBF;
+    padding-left: 4vw;
+  }
+
+  .projone-section-one {
+    display: block;
+  }
+
+  .proj-section-subtitle, .proj-section-findings-title {
+    letter-spacing: 0.2vw;
+    font-size: 3.8vw;
+    margin-bottom: 0.8vw;
+    /* background-color: #3955d9; */
+  }
+  
+  .proj-section-content, .proj-section-content-two {
+    text-align: left;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    letter-spacing: 0.3vw;
+    font-size: 2.8vw;
+    margin-bottom: 1vw;
+    line-height: 2.3;
+    /* background-color: #a58e68; */
+  }
+
+  .proj-section-content-two {
+    margin-bottom: 2.5vw;
+  }
+
+  .projone-subsection {
+    margin: 5vw 0;
+  }
+
+  .proj-section-two-quote {
+    font-size: 2.8vw;
+    margin: 3vw 0vw;
+  }
+
+  .proj-link-button {
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+  }
+
+  .projone-screen-one-img {
+    width: 100%;
+  }
+
+  .proj-section-container {
+    margin-top: 15vw;
+  }
+
+  .projone-methodology-phone {
+    display: block;
+    margin-bottom: 5vw;
+  }
+
+  .u-full-width {
+    display: none;
+  }
+
+  .proj-section-table-title {
+    letter-spacing: 0.2vw;
+    font-size: 2.6vw;
+    margin-bottom: 0vw;
+    /* padding-bottom: 0; */
+  }
+  
+  .proj-section-table-content {
+    letter-spacing: 0.3vw;
+    font-size: 2.8vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    border: none;
+  }
+  
+  .proj-section-table-title, .proj-section-table-content {
+    padding: 1vw 0;
+  }
+
+  .proj-section-findings {
+    display: block;
+  }
+  
+  .proj-section-findings-content-one {
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    line-height: 2.3;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    font-size: 2.6vw;
+    margin-bottom: 0vw;
+  }
+  
+  .proj-section-findings-content-two {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    letter-spacing: 0.3vw;
+    font-size: 2.8vw;
+    margin-bottom: 1vw;
+    line-height: 2.3;
+    text-align: left;
+    /* background-color: #a58e68; */
+  }
+  
+  .proj-section-findings-subtitle {
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    color: #D8CEBF;
+  }
+
+  .proj-findings-container {
+    margin: 5vw 0;
+  }
+
+  .proj-section-five-subtitle {
+    font-size: 4vw;
+  }
+
+  .projone-section-five, .projone-section-five-right {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 90%;
+    grid-gap: 0 7vw;
+  }
+
+  .projone-screens-img {
+    width: 100%;
+  }
+
+  .proj-section-five-content {
+    border-left: solid 0.4vw #a58e68;
+    padding-left: 4vw;
+  }
   
   .projects-footer {
     width: 85%;
     margin-top: 10vh;
-
   }
+
+
 }
 
 @media (max-width: 320px) {
@@ -2119,7 +2290,6 @@ body {
   .proj-duration {
     margin-top: 1vw;
   }
-
 }
 
 /* _______________________________________________________________________________________ */
