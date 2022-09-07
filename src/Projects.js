@@ -127,7 +127,7 @@ function Projects() {
 
 
         <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
+          <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
