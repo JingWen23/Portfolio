@@ -1248,14 +1248,14 @@ body {
   }
   
   .about-titlethree {
-    font-size: 9.5vw;
+    font-size: 11.5vw;
     text-align: center;
     padding: 2vw 0;
   }
   
   .about-titlefour {
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     line-height: 2;
     letter-spacing: 0.3vw;
   }
@@ -1383,10 +1383,10 @@ body {
   .about-title-degree {
     font-family: "Cormorant Garamond", serif;
     font-weight: bold;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.4vw;
     text-align: center;
     color: #a58e68;
-    font-size: 3.4vw;
+    font-size: 3.8vw;
     margin-bottom: 1vw;
   }
   
@@ -1395,7 +1395,7 @@ body {
     font-family: "Montserrat", serif;
     font-weight: 500;
     letter-spacing: 1.6px;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     margin-bottom: 1vw;
   }
   
@@ -1405,7 +1405,7 @@ body {
     letter-spacing: 0.4vw;
     text-align: center;
     color: #b6b6b6;
-    font-size: 1.9vw;
+    font-size: 2.4vw;
   }
 
   .about-title-skillsname {
@@ -1413,7 +1413,7 @@ body {
     font-family: "Montserrat", serif;
     font-weight: 500;
     letter-spacing: 2px;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     margin-bottom: 6vw;
   }
 
