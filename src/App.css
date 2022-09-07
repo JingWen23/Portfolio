@@ -70,7 +70,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .burger-menu .bar1,
   .bar2,
   .bar3 {
@@ -207,7 +207,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .menu-title {
     letter-spacing: 0.2rem;
     font-size: 2rem;
@@ -720,7 +720,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .wrapper-grid {
     grid-template-columns: 2.5fr 4fr;
     grid-gap: 15px;
@@ -1130,6 +1130,16 @@ body {
   line-height: 2;
 }
 
+.one-intro-about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.two-intro-about {
+  justify-content: center;
+}
+
 @media (max-width: 806px) {
   .intro-wrapper-grid {
     grid-template-columns: 2fr 3.9fr;
@@ -1182,7 +1192,7 @@ body {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .intro-wrapper-grid {
     grid-template-columns: 2fr 5fr;
     gap: 10px;
@@ -1210,16 +1220,44 @@ body {
 
 @media (max-width: 425px) {
   .intro-wrapper-grid {
-    grid-template-columns: 2.2fr 3fr;
-    grid-gap: 0px;
-    width: 75%;
-    height: 20vh;
-    margin-top: 15vh;
+    display: block;
+    height: auto;
   }
 
   .about-intro-img {
-    width: 100%;
-    height: auto;
+    width: 60%;
+  }
+
+  .one-intro-about {
+    justify-content: center;
+  }
+  
+  .two-intro-about {
+    justify-content: center;
+  }
+
+  .about-titleone {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 2vw;
+  }
+  
+  .about-titletwo {
+    text-align: center;
+    font-size: 2.2vw;
+  }
+  
+  .about-titlethree {
+    font-size: 9vw;
+    text-align: center;
+    padding: 2vw 0;
+  }
+  
+  .about-titlefour {
+    text-align: center;
+    font-size: 1.8vw;
+    line-height: 2;
+    letter-spacing: 0.3vw;
   }
 }
 
@@ -1250,17 +1288,6 @@ body {
   display: none;
 }
 
-/* .skills-wrapper-grid {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  grid-gap: 40px;
-  justify-content: center;
-  width: 78%;
-  margin: auto;
-  margin-bottom: 4vw;
-  background-color: aliceblue;
-} */
-
 .about-title-edu {
   font-family: "Montserrat", serif;
   font-weight: 700;
@@ -1279,7 +1306,7 @@ body {
   margin-bottom: 1vw;
 }
 
-.about-title-degreename {
+.about-title-degreename, .about-title-skillsname {
   text-align: left;
   font-family: "Montserrat", serif;
   font-weight: 500;
@@ -1297,19 +1324,10 @@ body {
   font-size: 1vw;
 }
 
-/* .about-title-in-learning {
-  font-family: "Montserrat", serif;
-  font-weight: 700;
-  letter-spacing: 0.3vw;
-  text-align: left;
-  font-size: 1.8vw;
-} */
-
 @media (max-width: 806px) {
   .education-wrapper-grid {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    /* grid-gap: 40px; */
     justify-content: center;
     width: 75%;
     margin: auto;
@@ -1321,7 +1339,6 @@ body {
   .education-wrapper-grid {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    /* grid-gap: 40px; */
     justify-content: center;
     width: 78%;
     margin: auto;
@@ -1329,11 +1346,10 @@ body {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .education-wrapper-grid {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    /* grid-gap: 40px; */
     justify-content: center;
     width: 90%;
   }
@@ -1351,24 +1367,64 @@ body {
 
 @media (max-width: 425px) {
   .education-wrapper-grid {
-    display: none;
-  }
-
-  .education-phone-wrapper-grid {
     display: block;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 4vw;
   }
 
   .about-title-edu {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    text-align: center;
+    font-size: 2.2vw;
+    margin: 2vw 0;
+  }
+  
+  .about-title-degree {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    color: #a58e68;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  
+  .about-title-degreename {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+  }
+  
+  .about-title-uni {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    color: #b6b6b6;
+    font-size: 1.5vw;
+  }
+
+  .about-title-skillsname {
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6vw;
+    margin-bottom: 6vw;
+  }
+
+  
+
+  /* .about-title-edu {
     margin-bottom: 1vw;
   }
 
   .about-title-uni {
     margin-bottom: 2.5vw;
-  }
+  } */
 
 }
 
@@ -1565,7 +1621,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .projects-footer {
     margin-top: 5vh;
   }
@@ -1581,6 +1637,11 @@ body {
 
 @media (max-width: 425px) {
 
+  a {
+    text-decoration: none;  }
+  a:hover {
+    text-decoration: none; }
+
   .allproj-title {
     text-align: left;
     font-family: "Montserrat", serif;
@@ -1595,13 +1656,14 @@ body {
     color: black;
     font-family: "Montserrat", serif;
     font-weight: 600;
-    letter-spacing: 0.8vw;
+    letter-spacing: 0.7vw;
     text-align: left;
     font-size: 3vw;
     padding-left: 2vw ;
-    margin: 1vw 0;
+    margin: 2vw 0;
     border-left: solid 0.5vw #AB926C;
     line-height: 1.8;
+    text-decoration: none;
   }
 
   .projects-footer {
@@ -2023,7 +2085,7 @@ body {
   } */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .projects-footer {
     margin-top: 5vh;
   }
@@ -2038,9 +2100,11 @@ body {
 }
 
 @media (max-width: 425px) {
-
+  
   .projects-footer {
     width: 85%;
+    margin-top: 10vh;
+
   }
 }
 
@@ -2253,7 +2317,7 @@ body {
   }
 } */
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .flex-component {
     margin: 5px;
   }

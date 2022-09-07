@@ -54,10 +54,10 @@ function About() {
         <div className="content-area">
 
         <div className="intro-wrapper-grid">
-          <div className="one">
+          <div className="one-intro-about">
             <img src={AboutIntro} className="about-intro-img" alt="Logo" />
           </div>
-          <div className="two">
+          <div className="two-intro-about">
             <p className="about-titleone">"Tiny Details Matter"</p>
             <h5 className="about-titletwo">Hello, I'm</h5>
             <h5 className="about-titlethree">Jing Wen</h5>
@@ -78,12 +78,12 @@ function About() {
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Education</h5>
             <h5 className="about-title-degree">Bachelor of Information Technology</h5>
             <p className="about-title-degreename">Web and App Development</p>
             <p className="about-title-uni">Macquarie University (2019.02 - 2022.06)</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -97,11 +97,11 @@ function About() {
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Certificate</h5>
           <h5 className="about-title-degree">Google UX Design</h5>
           <p className="about-title-uni">Coursera (2022.03 - 2022.08)</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -125,7 +125,7 @@ function About() {
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Experience</h5>
           <h5 className="about-title-degree">App Developer Intern</h5>
           <p className="about-title-degreename">Leanmote</p>
@@ -137,7 +137,7 @@ function About() {
 
           <h5 className="about-title-degree">Freelance Designer</h5>
           <p className="about-title-uni">2022.07 - Present</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -145,15 +145,15 @@ function About() {
           </div>
           <div className="about-two-software">
             <div className="about-software-content">
-                <p className="about-title-degreename">Adobe XD, Adobe Photoshop, Figma,  Visual Studio Code</p>
+                <p className="about-title-skillsname">Adobe XD, Adobe Photoshop, Figma,  Visual Studio Code</p>
             </div>
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Software Skills</h5>
           <p className="about-title-degreename">Adobe XD, Adobe Photoshop, Figma,  Visual Studio Code</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -161,15 +161,15 @@ function About() {
           </div>
           <div className="about-two-software">
             <div className="about-software-content">
-                <p className="about-title-degreename">Communication, Teamwork, Adaptability, Active Listening</p>
+                <p className="about-title-skillsname">Communication, Teamwork, Adaptability, Active Listening</p>
             </div>
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Soft Skills</h5>
           <p className="about-title-degreename">Communication, Teamwork, Adaptability, Active Listening</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -177,15 +177,15 @@ function About() {
           </div>
           <div className="about-two-software">
             <div className="about-software-content">
-                <p className="about-title-degreename">UX Design, UX Research, React Native, React JS, HTML & CSS</p>
+                <p className="about-title-skillsname">UX Design, UX Research, React Native, React JS, HTML & CSS</p>
             </div>
           </div>
         </div>
 
-        <div className="education-phone-wrapper-grid">
+        {/* <div className="education-phone-wrapper-grid">
           <h5 className="about-title-edu">Hard Skills</h5>
           <p className="about-title-degreename">UX Design, UX Research, React Native, React JS, HTML & CSS</p>
-        </div>
+        </div> */}
 
         <div className="education-wrapper-grid">
           <div>
@@ -207,7 +207,7 @@ function About() {
             <p className="about-title-uni">2022.08 - Present</p>
         </div>
 
-        <ul className="footer">
+        <ul className="projects-footer">
           <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
