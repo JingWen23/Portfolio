@@ -113,19 +113,19 @@ function ProjectThree() {
                 <h2 className="proj-section-title">Project Overview</h2>
 
                 <div className="projone-section-one">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Problem</h5>
                         <p className="proj-section-content">The adoption service is currently offered through social media and information can get messy when a lot of people are enquiring. The entire system <span className="proj-section-content-bold">highly rely </span> on <span className="proj-section-content-bold">people working </span>physically in the center .</p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Target Audience</h5>
                         <p className="proj-section-content">Adults seeking to  <span className="proj-section-content-bold">adopt a pet companion</span> through an animal shelter. </p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Goal</h5>
                         <p className="proj-section-content">Design a website where people can <span className="proj-section-content-bold">easily </span> view the pets for adoption and proceed to make an appointment automatically <span className="proj-section-content-bold">without having to wait</span> to verbally make one.</p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">My Role</h5>
                         <p className="proj-section-content">UX designer / researcher designing the app and responsive website from conception to delivery.</p>
                     </div>
@@ -143,7 +143,7 @@ function ProjectThree() {
 
                         <p className="proj-section-content-two">and the <span className="proj-section-content-bold">adoption list</span> that is <span className="proj-section-content-bold">unorganized</span> frustrates them, which results in user feeling exhausted when they try to adopt a pet. </p>
                     
-                        <a href={ProjThreePersona} target="_blank" className="projthree-link-button">Click here to view the persona created +</a>
+                        <a href={ProjThreePersona} target="_blank" className="proj-link-button">Click here to view the persona created +</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@ function ProjectThree() {
                 <h2 className="proj-section-title">Starting the Design</h2>
 
                 <div className="projone-section-three">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Sitemap</h5>
                         <p className="proj-section-content">A sitemap was created based on the pain points identified. The information architecture of the website is structured in a way where information are segregated into further sections / pages is a reasonable way to prevent overwhelming information. </p>
                         <a href={ProjThreeSitemap} target="_blank" className="proj-link-button">Click here to view the sitemap +</a>
@@ -189,7 +189,7 @@ function ProjectThree() {
                 </div>
 
                 <div className="projone-section-three">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">Methodology</h5>
 
                         <table class="u-full-width">
@@ -217,6 +217,29 @@ function ProjectThree() {
                             </tbody>
                         </table>
 
+                        <div className="projone-methodology-phone">
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Study type:</p>
+                                <p className="proj-section-table-content">Unmoderated</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Location:</p>
+                                <p className="proj-section-table-content">Malaysia and Australia, remote</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Date:</p>
+                                <p className="proj-section-table-content">Sessions will take place between May 2 to May 7</p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Details:</p>
+                                <p className="proj-section-table-content">5 participants will make an adoption appointment. They will then be requested to complete the questionnaire on the satisfaction rate. </p>
+                            </div>
+                            <div className="methodology-partone">
+                                <p className="proj-section-table-title">Duration:</p>
+                                <p className="proj-section-table-content">20-30 minutes</p>
+                            </div>
+                    </div>
+
                         <h5 className="proj-section-findings-title">Main Findings</h5>
                         <div className="projthree-section-findings">
                             
@@ -233,7 +256,11 @@ function ProjectThree() {
                         </div>
 
                     </div>
+
+                    
                 </div>
+
+                
             </div>
 
             <div ref={projRefining} className="proj-section-container">
@@ -247,6 +274,15 @@ function ProjectThree() {
                                 <div className="proj-section-five-content">
                                     <p className="proj-section-table-title">Home Screen</p>
                                     <p className="proj-section-content">The first screen directs user attention to the adoption service as it is the main purpose of this site.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projthree-section-five-phone">
+                            <img src={ProjThreePetSelection} className="projthree-screens-img" alt="Logo" />
+                            <div className="proj-section-five-text-container">
+                                <div className="proj-section-five-content">
+                                    <p className="proj-section-table-title">Pet Selection Screen</p>
+                                    <p className="proj-section-content">Users are presented with different photos of pets for adoption, along with their breeds and names.</p>
                                 </div>
                             </div>
                         </div>
@@ -277,6 +313,15 @@ function ProjectThree() {
                             </div>
                             <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="Logo" />
                         </div>
+                        <div className="projthree-section-five-phone">
+                            <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="Logo" />
+                            <div className="proj-section-five-text-container">
+                                <div className="proj-section-five-content">
+                                    <p className="proj-section-table-title">Confirmation Screen</p>
+                                    <p className="proj-section-content">The screen provides the details of the appointment before user proceeds to complete their appointment.</p>
+                                </div>
+                            </div>
+                        </div>
 
                         <div className="projthree-link-button-container">
                         <a href={ProjThreeMockupsSmall} target="_blank" className="projthree-section-five-link-button">CLICK HERE TO VIEW MOCKUP SCREENS CREATED FOR SMALLER SCREEN SIZE +</a>
@@ -294,12 +339,12 @@ function ProjectThree() {
                 <h5 className="proj-section-findings-title">Main Findings</h5>
                         <div className="projthree-section-accessiblity-content">
                             
-                            <div>
+                            <div className="projone-subsection">
                                 <img src={FontSize} className="projthree-accessibility-img" alt="Logo" />
                                 <p className="proj-section-findings-content-one">Font Size</p>
                                 <p className="proj-section-findings-content-two">Different font sizes were used to direct users’ attention to important information.</p>
                             </div>
-                            <div>
+                            <div className="projone-subsection">
                                 <img src={Contrast} className="projthree-accessibility-img" alt="Logo" />
                                 <p className="proj-section-findings-content-one">Color Contrast</p>
                                 <p className="proj-section-findings-content-two">High colour contrast applied to elements that require users’ attention. </p>
@@ -322,7 +367,7 @@ function ProjectThree() {
         </div>
 
         <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
+          <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>

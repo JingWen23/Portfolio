@@ -105,11 +105,11 @@ function ProjectTwo() {
                 <h2 className="proj-section-title">Project Overview</h2>
 
                 <div className="projone-section-one">
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Goal</h5>
                         <p className="proj-section-content">Design and create a mobile app for <span className="proj-section-content-bold">users to record their memories</span>. Through the app, users should be able to view, add and delete their memories.</p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">My Role</h5>
                         <p className="proj-section-content">UX designer designing the app from conception to delivery. Programmer coding the app functionalities.</p>
                     </div>
@@ -129,18 +129,6 @@ function ProjectTwo() {
 
                     <img src={ProjTwoStoryboard} className="projtwo-storyboard-img" alt="Logo" />
                 </div>
-
-                {/* <div className="projone-section-two">
-                    <div>
-                        <p className="proj-section-content">Interviews were held and empathy maps were created to understand the target users and what they seek for within this app. Many participants interviewed reported that them forgetting to take medicine</p>
-
-                        <p className="proj-section-two-quote">“is something that happens on a weekly basis”</p>
-
-                        <p className="proj-section-content-two">and they would love to see an app that could help them keep track of their medication schedule. The main user group identified was busy adults who can be forgetful and tend to skip their medications.</p>
-                    
-                        <a href={ProjOnePersona} target="_blank" className="proj-link-button">Click here to view the personas created +</a>
-                    </div>
-                </div> */}
             </div>
 
             <div ref={projDesign} className="proj-section-container" data-aos="fade-in">
@@ -251,32 +239,32 @@ function ProjectTwo() {
                 
 
                 <div className="projtwo-section-five">
-                    <div>
+                    <div className="proj-findings-container">
                         <h5 className="proj-section-findings-subtitle">1</h5>
                         <p className="proj-section-findings-content-one">Accounts</p>
                         <p className="proj-section-findings-content-two">Users can view different memories when signed in with different accounts.</p>
                     </div>
-                    <div>
+                    <div className="proj-findings-container">
                         <h5 className="proj-section-findings-subtitle">2</h5>
                         <p className="proj-section-findings-content-one">Add Memory</p>
                         <p className="proj-section-findings-content-two">Users can add a new memory into the list.</p>
                     </div>
-                    <div>
+                    <div className="proj-findings-container">
                         <h5 className="proj-section-findings-subtitle">3</h5>
                         <p className="proj-section-findings-content-one">Delete Memory</p>
                         <p className="proj-section-findings-content-two">Users can remove a memory entry from the list.</p>
                     </div>
-                    <div>
+                    <div className="proj-findings-container">
                         <h5 className="proj-section-findings-subtitle">4</h5>
                         <p className="proj-section-findings-content-one">View Memory Details</p>
                         <p className="proj-section-findings-content-two">Users can view the detail descriptions of each memory.</p>
                     </div>
-                    <div>
+                    <div className="proj-findings-container">
                         <h5 className="proj-section-findings-subtitle">5</h5>
                         <p className="proj-section-findings-content-one">View Profile</p>
                         <p className="proj-section-findings-content-two">Users can view their profile information.</p>
                     </div>
-                    <div>
+                    <div className="proj-findings-container"> 
                         <h5 className="proj-section-findings-subtitle">6</h5>
                         <p className="proj-section-findings-content-one">View Total Entries</p>
                         <p className="proj-section-findings-content-two">Users can check how many current entries they have.</p>
@@ -299,13 +287,13 @@ function ProjectTwo() {
         </div>
 
         <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
+          <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>
         </div>
 
-      <Popup
+    <Popup
       modal
       overlayStyle={{ background: "rgba(255,255,255,0.98" }}
       contentStyle={contentStyle}

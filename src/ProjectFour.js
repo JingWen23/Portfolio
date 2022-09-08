@@ -97,19 +97,19 @@ function ProjectFour() {
                 <h2 className="proj-section-title">Project Overview</h2>
 
                 <div className="projone-section-one">
-                    <div>
+                    <div className="projone-subsection">
                     <h5 className="proj-section-subtitle">The Goal</h5>
                         <p className="proj-section-content">Design and create a web application for users to <span className="proj-section-content-bold">order bakery products</span>.</p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Team</h5>
                         <p className="proj-section-content">The project is carried out by a team of 4, each were distributed with a different role and some collaborated sections. </p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">The Tool</h5>
                         <p className="proj-section-content">The mobile app is coded using <span className="proj-section-content-bold">React JS</span>, an open-source front-end JavaScript library for building user interfaces maintained by Meta and a community of individual developers and companies.</p>
                     </div>
-                    <div>
+                    <div className="projone-subsection">
                         <h5 className="proj-section-subtitle">My Role</h5>
                         <p className="proj-section-content">UX designer designing the app from conception to delivery. Programmer in charge of coding part of the project.</p>
                     </div>
@@ -123,13 +123,13 @@ function ProjectFour() {
                 <div className="projtwo-section-container">
                     <p className="proj-section-content">By aligning with the assignment requirement, it was decided that the project would contain the following:</p>
 
-                        <div>
+                        <div className="projone-subsection">
                             <h5 className="projfour-section-proposal-subtitle">7</h5>
                             <p className="proj-section-proposal-content-one">Pages</p>
                             <p className="proj-section-proposal-content-two">Home page, Menu page, Product Detail page, Contact page, Cart page, Checkout page, FAQ page</p>
                         </div>
 
-                        <div>
+                        <div className="projone-subsection">
                             <h5 className="projfour-section-proposal-subtitle">9</h5>
                             <p className="proj-section-proposal-content-one">Functionalities</p>
                             <p className="proj-section-proposal-content-two">View menu, Search menu item, Add item into cart, View cart, Edit cart amount, Remove item from cart, View FAQ questions and answers, Send email for help, Login to account</p>
@@ -195,7 +195,7 @@ function ProjectFour() {
         </div>
 
         <ul className="projects-footer">
-          <li className="projects-footer-link">© 2022 Jing Wen Ng </li>
+          <li className="footer-link">© 2022 Jing Wen Ng </li>
           <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
           <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
         </ul>

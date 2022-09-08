@@ -2144,7 +2144,7 @@ body {
 
   .proj-section-subtitle, .proj-section-findings-title {
     letter-spacing: 0.2vw;
-    font-size: 3.8vw;
+    font-size: 4vw;
     margin-bottom: 0.8vw;
     /* background-color: #3955d9; */
   }
@@ -2442,7 +2442,7 @@ body {
 }
 
 .projtwo-section-four-content {
-  border-left: solid 0.3vw #a58e68;
+  border-left: solid 0.4vw #a58e68;
   padding-left: 2vw;
 }
 
@@ -2527,6 +2527,64 @@ body {
     margin-left: auto;
   }
 }
+
+@media (max-width: 425px) {
+  .projtwo-section-three {
+    display: block;
+  }
+  
+  .projtwo-section-three-two {
+    display: block;
+  }
+
+  .projtwo-login-img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .projtwo-splash-img {
+    display: block;
+    width: 100%;
+    /* margin-right: auto; */
+  }
+
+  .projtwo-section-four-flex-container {
+    width: 100%;
+    margin: 6vw 0;
+  }
+  
+  .projtwo-section-fourtwo-flex-container {
+    width: 100%;
+  }
+  
+  .projtwo-section-fourthree-flex-container {
+    width: 100%;
+  }
+
+  .projtwo-section-four-content {
+    border-left: solid 0.4vw #a58e68;
+    padding-left: 4vw;
+  }
+
+  .projtwo-section-five-content {
+    letter-spacing: 0.3vw;
+    font-size: 2.8vw;
+  }
+
+  .projtwo-section-five {
+    display: block;
+    /* grid-template-columns: auto auto auto;
+    width: 85%;
+    grid-gap: 2vw 5vw;
+    margin-left: 4.7vw;
+    margin-top: 3vw; */
+  }
+
+  /* border-left: solid 0.4vw #a58e68;
+    padding-left: 4vw; */
+}
+
 /* _______________________________________________________________________________________ */
 
 /* Project Three */
@@ -2568,6 +2626,10 @@ body {
   margin: 8vw auto 12vw auto;
 }
 
+.projthree-section-five-phone {
+  display: none;
+}
+
 .projthree-section-five-right {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -2595,7 +2657,7 @@ body {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  margin-left: 4.7vw;
+  
 }
 
 .projthree-section-five-link-button:hover {
@@ -2607,6 +2669,7 @@ body {
 
 .projthree-link-button-container {
   margin-bottom: 7vw;
+  margin-left: 4.7vw;
 }
 
 .projthree-section-accessibility {
@@ -2648,6 +2711,52 @@ body {
   transition: 0.3s;
   cursor: pointer;
   color: #c2c2c2;
+}
+
+@media (max-width: 425px) {
+  .projthree-section-findings {
+    display: block;
+  }
+
+  .projthree-section-five {
+    display: block;
+  }
+
+  .projthree-section-five-right {
+    display: block;
+  }
+
+  .projthree-section-five-phone {
+    display: block;
+    width: 85%;
+    margin-left: 4.7vw;
+    margin: 8vw auto 0vw auto;
+  }
+
+  .proj-section-five-content {
+    margin: 5vw 0;
+    border-left: solid 0.4vw #a58e68;
+  }
+
+  .projthree-section-five-right, .projthree-section-five-right-final {
+    display: none;
+  }
+
+  .projthree-section-five-link-button {
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+  }
+
+  .projthree-section-accessiblity-content {
+    display: block;
+  }
+
+  .projthree-accessibility-img {
+    display: block;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  
 }
 
 /* _______________________________________________________________________________________ */
@@ -2735,6 +2844,64 @@ body {
   margin-bottom: 15vw;
   margin-left: 13vw;
 }
+
+@media (max-width: 425px) {
+  .projfour-section-proposal-subtitle {
+    font-size: 4vw;
+  }
+
+  .proj-section-proposal-content-one{
+    letter-spacing: 0.2vw;
+    font-size: 2.6vw;
+  }
+
+  .proj-section-proposal-content-two {
+    letter-spacing: 0.3vw;
+    font-size: 2.8vw;
+  }
+
+  .projfour-section-design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 0vw 5vw;
+    margin-left: 4.7vw;
+    margin: 8vw auto 12vw auto;
+  }
+
+  .projfour-design-section-two {
+    display: block;
+    width: 100%;
+    margin-left: 4.7vw;
+    margin: 8vw auto 12vw auto;
+  }
+
+  .projfour-design-section-three {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    width: 118%;
+    grid-gap: 0vw 7vw;
+    margin-left: -10vw;
+    margin-top: 8vw;
+    /* margin-left: 4.7vw; */
+    /* margin: 8vw auto 12vw auto; */
+  }
+  
+  .projfour-design-section-four {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    width: 118%;
+    grid-gap: 0vw 5vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    margin-left: 0vw;
+  }
+  
+}
+
+
+
+
 
 /* _______________________________________________________________________________________ */
 

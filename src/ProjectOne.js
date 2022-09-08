@@ -226,7 +226,6 @@ function ProjectOne() {
                                 <p className="proj-section-table-title">Duration:</p>
                                 <p className="proj-section-table-content">15-20 minutes</p>
                             </div>
-
                         </div>
 
                         <h5 className="proj-section-findings-title">Main Findings</h5>
