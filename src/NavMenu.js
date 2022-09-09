@@ -24,10 +24,10 @@ export default ({ close }) => (
         </NavLink>
       </li>
       <li className="menu-list">
-        <NavLink to ="/resume">
+        <a href="https://drive.google.com/file/d/1NTr7ehUjws0L0CQPSluDE_OXJKPVT4LF/view?usp=sharing">
           <p className="menu-code">Chapter .04</p>
           <p className="menu-title">Resume</p>
-        </NavLink>
+        </a>
       </li>
     </ul>
   </div>

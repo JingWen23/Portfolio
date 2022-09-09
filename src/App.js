@@ -20,7 +20,7 @@ function App() {
           <Route path="/project/2" element={ <ProjectTwo/> } />
           <Route path="/project/3" element={ <ProjectThree/> } />
           <Route path="/project/4" element={ <ProjectFour/> } />
-          <Route path="/resume" element={ <Temporary/> } />
+          {/* <Route path="/resume" element={ <Temporary/> } /> */}
         </Routes>
       </HashRouter>
     </div>
