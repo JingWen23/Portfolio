@@ -16,7 +16,7 @@ import ProjTwoHome from "./asset/ProjTwoHome.png";
 import ProjTwoAlbum from "./asset/ProjTwoAlbum.png";
 import ProjTwoAdd from "./asset/ProjTwoAdd.png";
 import ProjTwoDetail from "./asset/ProjTwoDetail.png";
-import NavMenu from "./NavMenu";
+import NavMenu from "./component/NavMenu";
 import "./App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -74,21 +74,8 @@ function ProjectTwo() {
 
     return (
     <div>
-        <Link to="/"><img src={Logo} className="logo-home" alt="Logo" /></Link>
-        <div className="home-container">
-            <div className="home-guide">
-            <ul>
-                <li onClick={() => scrollToSection(projIntro)} className="home-link">00</li>
-                <li onClick={() => scrollToSection(projOverview)} className="home-link">01</li>
-                <li onClick={() => scrollToSection(projOutline)} className="home-link">02</li>
-                <li onClick={() => scrollToSection(projDesign)} className="home-link">03</li>
-                <li onClick={() => scrollToSection(projRefining)} className="home-link">04</li>
-                <li onClick={() => scrollToSection(projFunctionalities)} className="home-link">05</li>
-                <li onClick={() => scrollToSection(projOutcome)} className="home-link">06</li>
-                {/* <li onClick={() => scrollToSection(projfiveIntro)} className="home-link">05</li> */}
-            </ul>
-            </div>
-        </div>
+
+        <NavMenu /> 
 
         <div className="proj-content-area">
 
@@ -286,22 +273,23 @@ function ProjectTwo() {
             </div>
         </div>
 
-        <ul className="projects-footer">
-          <li className="footer-link">© 2022 Jing Wen Ng </li>
-          <a href="https://www.linkedin.com/in/jing-wen-n-2a1442128/" target="_blank" className="footer-link-two">LinkedIn</a>
-          <ButtonMailTo mailto="mailto:jingwen9@gmail.com" />
-        </ul>
+        <div className="footer">
+          <div className="footer-list">
+            <a href="https://drive.google.com/file/d/1NTr7ehUjws0L0CQPSluDE_OXJKPVT4LF/view?usp=sharing">
+              <div className="footer-behance"/>
+            </a>
+          </div>
+          <div className="footer-list">
+            <div className="footer-linkedin"/>
+          </div>
+          <div className="footer-list">
+            <div className="footer-email" />
+          </div>
+        </div>  
+
+
         </div>
 
-    <Popup
-      modal
-      overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-      contentStyle={contentStyle}
-      closeOnDocumentClick={false}
-      trigger={open => <BurgerIcon open={open} />}
-    >
-      {close => <NavMenu close={close} />}
-    </Popup>
       </div>
     )
 }

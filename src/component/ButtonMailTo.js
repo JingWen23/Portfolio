@@ -9,7 +9,7 @@ const ButtonMailTo = ({ mailto, label }) => {
                 window.location.href = mailto;
                 e.preventDefault();
             }}
-            className="footer-link-two"
+            className="email-button"
         >
             Email
         </Link>
