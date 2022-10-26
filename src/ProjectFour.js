@@ -1,213 +1,367 @@
-import { Link } from "react-router-dom";
-import React, {useEffect, useState, useRef} from 'react';
-import { render } from "react-dom";
-import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
-import Logo from "./asset/Logo.png";
-import ButtonMailTo from "./component/ButtonMailTo";
-import ProjFourIntro from "./asset/ProjFourIntro.jpg"
+import React, { useRef, useEffect, useState } from "react";
+import "./App.css";
+import NavMenu from "./component/NavMenu";
+import { Link, NavLink } from "react-router-dom";
+import ProjFourIntro from "./asset/ProjFourIntro.mp4";
 import ProjFourHome from "./asset/ProjFourHome.png"
 import ProjFourMenu from "./asset/ProjFourMenu.png"
 import ProjFourDetail from "./asset/ProjFourDetail.jpg"
 import ProjFourFAQ from "./asset/ProjFourFAQ.jpg"
 
+const getDimensions = ele => {
+  const { height } = ele.getBoundingClientRect();
+  const offsetTop = ele.offsetTop;
+  const offsetBottom = offsetTop + height;
 
-import NavMenu from "./component/NavMenu";
-import "./App.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: 'aos-init', // class applied after initialization
-    animatedClassName: 'aos-animate', // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
-  
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  
+  return {
+    height,
+    offsetTop,
+    offsetBottom,
+  };
+};
+
+const scrollTo = ele => {
+  ele.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
   });
-
-
-const contentStyle = {
-      background: "rgba(255,255,255,0",
-      width: "80%",
-      border: "none"
-    };
+};
 
 function ProjectFour() {
+  const [visibleSection, setVisibleSection] = useState();
 
-    useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
+  const headerRef = useRef(null);
+  const overviewRef = useRef(null);
+  const userRef = useRef(null);
+  const designfirstRef = useRef(null);
+  const usabilitystudyRef = useRef(null);
+  const designrefineRef = useRef(null);
+  const responsivedesignRef = useRef(null);
+  const conclusionRef = useRef(null);
 
-    const projIntro = useRef(null);
-    const projOverview = useRef(null);
-    const projProposal = useRef(null);
-    const projDesign = useRef(null);
-    const projOutcome = useRef(null);
+  const sectionRefs = [
+    { section: "Overview", ref: overviewRef },
+    { section: "User", ref: userRef },
+    { section: "DesignFirst", ref: designfirstRef },
+    { section: "UsabilityStudy", ref: usabilitystudyRef },
+    { section: "DesignRefine", ref: designrefineRef },
+    { section: "ResponsiveDesign", ref: responsivedesignRef },
+    { section: "Conclusion", ref: conclusionRef },
+  ];
 
-    const scrollToSection = (elementRef) => {
-            window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: "smooth",
-            });
-        };
+//   useEffect(() => {
+//     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+//     }, []);
 
-    return (
+  useEffect(() => {
+    const handleScroll = () => {
+      const { height: headerHeight } = getDimensions(headerRef.current);
+      const scrollPosition = window.scrollY + headerHeight;
+
+      const selected = sectionRefs.find(({ section, ref }) => {
+        const ele = ref.current;
+        if (ele) {
+          const { offsetBottom, offsetTop } = getDimensions(ele);
+          return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+        }
+      });
+
+      if (selected && selected.section !== visibleSection) {
+        setVisibleSection(selected.section);
+      } else if (!selected && visibleSection) {
+        setVisibleSection(undefined);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [visibleSection]);
+  
+  return (
     <div>
+
+        <nav role="navigation" className="mobile-nav">
+            <div id="menuToggle">
+
+              <input type="checkbox" />
+            
+              <span></span>
+              <span></span>
+              <span></span>
+      
+              <ul id="menu">
+                <li>
+                  <NavLink to="/" activeClassName="active">
+                      <p className="menu-code">01</p>
+                      <p className="menu-title">Home</p>
+                  </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about">
+                        <p className="menu-code">02</p>
+                        <p className="menu-title">Who Am I</p>
+                    </NavLink>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1SaWQb4Nu5h4QirR0SDoWhF6Iq3edZ1fw/view?usp=sharing" target="_blank">
+                    <p className="menu-code">03</p>
+                    <p className="menu-title">Resume</p>
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
         
-        <NavMenu />
+        <NavMenu />  
 
-        <div className="proj-content-area">
-
-            <div ref={projIntro} className="proj-title-container">
-                <h5 className="proj-title">Project .04 (GROUP PROJECT)</h5>
-                <h5 className="proj-subtitle">Bakery Shopping Website</h5>
-                <p className="proj-duration">September 2021 - November 2021 (3 months)</p>
-
-                <div className="projfour-intro-container">
-                <img src={ProjFourIntro} className="projone-screens-img" alt="Logo" />
-            </div>
-
-            <div ref={projOverview} className="proj-section-container" data-aos="fade-in">
-                <h2 className="proj-section-title">Project Overview</h2>
-
-                <div className="projone-section-one">
-                    <div className="projone-subsection">
-                    <h5 className="proj-section-subtitle">The Goal</h5>
-                        <p className="proj-section-content">Design and create a web application for users to <span className="proj-section-content-bold">order bakery products</span>.</p>
+        <div className="projfour-video-container">
+            <div className="projfour-sub-video-container">
+                <video className="projfour-video" loop autoPlay>
+                    <source
+                        src={ProjFourIntro}
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+                <div className="projfour-video-content">
+                    <div className="projtwo-category">
+                        <p className="projtwo-category-name">Group Project</p>
                     </div>
-                    <div className="projone-subsection">
-                        <h5 className="proj-section-subtitle">The Team</h5>
-                        <p className="proj-section-content">The project is carried out by a team of 4, each were distributed with a different role and some collaborated sections. </p>
-                    </div>
-                    <div className="projone-subsection">
-                        <h5 className="proj-section-subtitle">The Tool</h5>
-                        <p className="proj-section-content">The mobile app is coded using <span className="proj-section-content-bold">React JS</span>, an open-source front-end JavaScript library for building user interfaces maintained by Meta and a community of individual developers and companies.</p>
-                    </div>
-                    <div className="projone-subsection">
-                        <h5 className="proj-section-subtitle">My Role</h5>
-                        <p className="proj-section-content">UX designer designing the app from conception to delivery. Programmer in charge of coding part of the project.</p>
-                    </div>
-                    
+                    <h5 className="projtwo-subtitle">Bakery Shopping Website</h5>
+                    <p className="projfour-duration">September 2021 - November 2021 (3 months)</p>
                 </div>
             </div>
+        </div>
 
-            <div ref={projProposal} className="proj-section-container" data-aos="fade-in">
-                <h2 className="proj-section-title">Project Proposal</h2>
+        <div className="proj-one-content-area">
 
-                <div className="projtwo-section-container">
-                    <p className="proj-section-content">By aligning with the assignment requirement, it was decided that the project would contain the following:</p>
+            <div id="container">
+            <div id="sidebar">
+                <div id="sidebar-content">
 
-                        <div className="projone-subsection">
-                            <h5 className="projfour-section-proposal-subtitle">7</h5>
-                            <p className="proj-section-proposal-content-one">Pages</p>
-                            <p className="proj-section-proposal-content-two">Home page, Menu page, Product Detail page, Contact page, Cart page, Checkout page, FAQ page</p>
-                        </div>
-
-                        <div className="projone-subsection">
-                            <h5 className="projfour-section-proposal-subtitle">9</h5>
-                            <p className="proj-section-proposal-content-one">Functionalities</p>
-                            <p className="proj-section-proposal-content-two">View menu, Search menu item, Add item into cart, View cart, Edit cart amount, Remove item from cart, View FAQ questions and answers, Send email for help, Login to account</p>
-                        </div>
+                <div className="header" ref={headerRef}>
+                    <button
+                    type="button"
+                    className={`header_link ${visibleSection === "Overview" ? "selectedfour" : ""}`}
+                    onClick={() => {
+                        scrollTo(overviewRef.current);
+                    }}
+                    >
+                    Overview
+                    </button>
+                    <button
+                    type="button"
+                    className={`header_link ${visibleSection === "User" ? "selectedfour" : ""}`}
+                    onClick={() => {
+                        scrollTo(userRef.current);
+                    }}
+                    >
+                    Proposal
+                    </button>
+                    <button
+                    type="button"
+                    className={`header_link ${visibleSection === "DesignFirst" ? "selectedfour" : ""}`}
+                    onClick={() => {
+                        scrollTo(designfirstRef.current);
+                    }}
+                    >
+                    Designs
+                    </button>
+                    <button
+                    type="button"
+                    className={`header_link ${visibleSection === "UsabilityStudy" ? "selectedfour" : ""}`}
+                    onClick={() => {
+                        scrollTo(usabilitystudyRef.current);
+                    }}
+                    >
+                    Conclusion
+                    </button>                    
                 </div>
             </div>
+           
+            </div>
+            <div id="content">
+                <div id="main-content">
 
-            <div ref={projDesign} className="proj-section-container" >
-                <h2 className="proj-section-title">Project Designs</h2>
+                <div className="section" id="overview" ref={overviewRef}>
+                    <div className="projfour-section-container">
+                        <p className="projfour-section-name">Project Overview</p>
+                    </div>
+                    <div className="projone-subsection">
+                        <div className="projfour-overview-spacing">
+                            <h5 className="projfour-section-subtitle">The Goal</h5>
+                            <p className="proj-section-content">Design and create a web application for users to <span className="proj-section-content-bold">order bakery products</span>.</p>
+                        </div>
+                        <div>
+            
+                            <h5 className="projfour-section-subtitle">The Team</h5>
+                            <p className="proj-section-content">The project is carried out by a team of 4, each were distributed with a different role and some collaborated sections. </p>
+                        </div>
+                    </div>
+                    <div className="projone-subsection">
+                        <div className="projfour-overview-spacing">
+                            <h5 className="projfour-section-subtitle">My Role</h5>
+                            <p className="proj-section-content">UX designer designing the app from conception to delivery. Programmer in charge of coding part of the project.</p>
+                        </div>
+                        <div>
+                            <h5 className="projfour-section-subtitle">The Tool</h5>
+                            <p className="proj-section-content">The mobile app is coded using <span className="proj-section-content-bold">React JS</span>, an open-source front-end JavaScript library for building user interfaces maintained by Meta and a community of individual developers and companies.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div>
-                        <div className="projfour-section-design">
-                            <img src={ProjFourHome} className="projfour-screens-img" alt="Logo" />
-                            <div className="proj-section-five-text-container">
-                                <div className="proj-section-five-content">
-                                    <p className="proj-section-table-title">Home Screen</p>
-                                    <p className="proj-section-content">The screen presents a series of famous products from the shop to attract customers’ attention.</p>
-                                </div>
+                <div className="section" id="user" ref={userRef}>
+                    <div className="projfour-section-container">
+                        <p className="projfour-section-name">Project Proposal</p>
+                    </div>
+                    <div>
+                      <p className="proj-section-content">By aligning with the assignment requirement, it was decided that the project would contain the following:</p>
+                          <div>
+                              <h5 className="projfour-section-proposal-subtitle">7</h5>
+                              <p className="proj-section-proposal-content-one">Pages</p>
+                              <p className="proj-section-proposal-content-two">Home page, Menu page, Product Detail page, Contact page, Cart page, Checkout page, FAQ page</p>
+                          </div>
+
+                          <div>
+                              <h5 className="projfour-section-proposal-subtitle">9</h5>
+                              <p className="proj-section-proposal-content-one">Functionalities</p>
+                              <p className="proj-section-proposal-content-two">View menu, Search menu item, Add item into cart, View cart, Edit cart amount, Remove item from cart, View FAQ questions and answers, Send email for help, Login to account</p>
+                          </div>
+                  </div>
+                </div>
+
+
+
+                <div className="section" id="designfirst" ref={designfirstRef}>
+                    <div className="projfour-section-container">
+                        <p className="projfour-section-name">Project Designs</p>
+                    </div>
+
+                    <div className="projfour-section-five-phone">
+                        <div className="proj-section-five-text-container phone-spacing">
+                            <div className="proj-section-five-content">
+                                <p className="proj-section-table-title">Home Screen</p>
+                                <p className="proj-section-content">The screen presents a series of famous products from the shop to attract customers’ attention.</p>
                             </div>
                         </div>
-                        <div className="projfour-design-section-two">
-                            <div className="proj-section-five-text-container">
-                                <div className="proj-section-five-content">
-                                    <p className="proj-section-table-title">Menu Screen</p>
-                                    <p className="proj-section-content">All products are displayed in a grid system, along with a search bar where users can filter specific items.</p>
-                                </div>
+                        <img src={ProjFourHome} className="projthree-screens-img" alt="Logo" />
+                              
+                    </div>
+
+                    <div className="projfour-section-five-phone">
+                        <div className="proj-section-five-text-container phone-spacing">
+                            <div className="proj-section-five-content">
+                                <p className="proj-section-table-title">Menu Screen</p>
+                                <p className="proj-section-content">All products are displayed in a grid system, along with a search bar where users can filter specific items.</p>
                             </div>
-                            <img src={ProjFourMenu} className="projthree-screens-img" alt="Logo" />
                         </div>
-                        <div className="projfour-design-section-three">
-                            <img src={ProjFourDetail} className="projthree-screens-img" alt="Logo" />
-                            <div className="proj-section-five-text-container">
-                                <div className="proj-section-five-content">
+                        <img src={ProjFourMenu} className="projthree-screens-img" alt="Logo" />
+                    </div>
+
+                    <div className="projfour-section-five-phone">
+                        <div className="proj-section-five-text-container phone-spacing">
+                                  <div className="proj-section-five-content">
                                     <p className="proj-section-table-title">Product Detail Screen</p>
                                     <p className="proj-section-content">Item description is provided with reviews from previous customers.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projfour-design-section-four">
-                            
-                            <div className="proj-section-five-text-container">
-                                <div className="proj-section-five-content">
-                                    <p className="proj-section-table-title">FAQ Screen</p>
-                                    <p className="proj-section-content">A series of questions with answers are displayed, accompanied by a form that sllows user to send questions to the site ownder through email.</p>
-                                </div>
-                            </div>
-                            <img src={ProjFourFAQ} className="projthree-screens-img" alt="Logo" />
-                        </div>
-
-                </div>
-
-            <div ref={projOutcome} className="proj-section-container" data-aos="fade-in">
-                <h2 className="proj-section-title">Project Outcome</h2>
-
-                <div className="projone-section-three">
-                    <div>
-                        <p className="proj-section-content">All functionalities proposed have been successfully implemented into the application. The complete application was built and published to heroku. </p>
-                        <a href="https://limitless-bastion-36675.herokuapp.com" target="_blank" className="proj-link-button">CLICK HERE TO VIEW THE WEB APP +</a>
+                                  </div>
+                              </div>
+                        <img src={ProjFourDetail} className="projthree-screens-img" alt="Logo" /> 
                     </div>
+
+                    <div className="projfour-section-five-phone">
+                        <div className="proj-section-five-text-container phone-spacing">
+                            <div className="proj-section-five-content">
+                                <p className="proj-section-table-title">FAQ Screen</p>
+                                <p className="proj-section-content">A series of questions with answers are displayed, accompanied by a form that sllows user to send questions to the site ownder through email.</p>
+                            </div>
+                        </div>
+                        <img src={ProjFourFAQ} className="projthree-screens-img" alt="Logo" />
+                              
+                    </div>
+
+                    <div className="projfour-section-design">
+                        <img src={ProjFourHome} className="projfour-screens-img" alt="Logo" />
+                              <div className="proj-section-five-text-container">
+                                  <div className="proj-section-five-content">
+                                      <p className="proj-section-table-title">Home Screen</p>
+                                      <p className="proj-section-content">The screen presents a series of famous products from the shop to attract customers’ attention.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="projfour-design-section-two">
+                              <div className="proj-section-five-text-container">
+                                  <div className="proj-section-five-content">
+                                      <p className="proj-section-table-title">Menu Screen</p>
+                                      <p className="proj-section-content">All products are displayed in a grid system, along with a search bar where users can filter specific items.</p>
+                                  </div>
+                              </div>
+                              <img src={ProjFourMenu} className="projthree-screens-img" alt="Logo" />
+                          </div>
+                          <div className="projfour-design-section-three">
+                              <img src={ProjFourDetail} className="projthree-screens-img" alt="Logo" />
+                              <div className="proj-section-five-text-container">
+                                  <div className="proj-section-five-content">
+                                      <p className="proj-section-table-title">Product Detail Screen</p>
+                                      <p className="proj-section-content">Item description is provided with reviews from previous customers.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="projfour-design-section-four">
+                            
+                              <div className="proj-section-five-text-container">
+                                  <div className="proj-section-five-content">
+                                      <p className="proj-section-table-title">FAQ Screen</p>
+                                      <p className="proj-section-content">A series of questions with answers are displayed, accompanied by a form that sllows user to send questions to the site ownder through email.</p>
+                                  </div>
+                              </div>
+                              <img src={ProjFourFAQ} className="projthree-screens-img" alt="Logo" />
+                          </div>
+                </div>
+
+                <div className="section" id="conclusion" ref={usabilitystudyRef}>
+
+                    <div className="projfour-section-container">
+                        <p className="projthree-section-name">Conclusion</p>
+                    </div>
+
+                    <h2 className="projfour-section-subtitle">Project Outcome</h2>
+                      
+                          <p className="proj-section-content">All functionalities proposed have been successfully implemented into the application. The complete application was built and published to heroku. </p>
+                          <a href="https://limitless-bastion-36675.herokuapp.com" target="_blank" className="proj-link-button">CLICK HERE TO VIEW THE WEB APP +</a>
+                      
+          
+                </div>
+
+                <div className="projone-footer">
+                    <div className="footer-list">
+                        <a href="https://drive.google.com/file/d/1NTr7ehUjws0L0CQPSluDE_OXJKPVT4LF/view?usp=sharing">
+                        <div className="footer-behance"/>
+                        </a>
+                    </div>
+                    <div className="footer-list">
+                        <a href="https://www.linkedin.com/in/jingwen-ng/">
+                            <div className="footer-linkedin"/>
+                        </a>
+                    </div>
+                    <div className="footer-list">
+                        <a href="mailto:jingwen9@gmail.com">
+                            <div className="footer-email" />
+                        </a>
+                    </div>
+                </div>   
+                
+                
+                
                 </div>
             </div>
             </div>
-        </div>
 
-        <div className="footer">
-          <div className="footer-list">
-            <a href="https://drive.google.com/file/d/1NTr7ehUjws0L0CQPSluDE_OXJKPVT4LF/view?usp=sharing">
-              <div className="footer-behance"/>
-            </a>
-          </div>
-          <div className="footer-list">
-            <div className="footer-linkedin"/>
-          </div>
-          <div className="footer-list">
-            <div className="footer-email" />
-          </div>
-        </div>  
-        
-        </div>
-
-      </div>
-    )
-//   return (
-//     <div>
-//       <h1>This is the home page</h1>
-//       <Link to="about">Click to view our about page</Link>
-//       <Link to="contact">Click to view our contact page</Link>
-//     </div>
-//   );
+            </div>
+    </div>
+  );
 }
 
 export default ProjectFour;

@@ -257,10 +257,14 @@ function About() {
                 </a>
               </div>
               <div className="footer-list">
-                <div className="footer-linkedin"/>
+                <a href="https://www.linkedin.com/in/jingwen-ng/">
+                  <div className="footer-linkedin"/>
+                </a>
               </div>
               <div className="footer-list">
-                <div className="footer-email" />
+                <a href="mailto:jingwen9@gmail.com">
+                  <div className="footer-email" />
+                </a>
               </div>
             </div>   
 
