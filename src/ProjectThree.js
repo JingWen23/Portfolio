@@ -19,21 +19,6 @@ import ProjThreeFindings2 from "./asset/ProjThreeFindings2.png";
 import FontSize from "./asset/FontSize.png";
 import Contrast from "./asset/Contrast.png";
 
-
-import ProjOneIntro from "./asset/ProjOneIntro.mp4";
-import ProjOnePersona from "./asset/ProjOnePersona.png";
-import ProjOneScreen1 from "./asset/ProjOneScreen1.jpg";
-import ProjOneScreen2 from "./asset/ProjOneScreen2.png";
-import ProjOneScreen3 from "./asset/ProjOneScreen3.png";
-import ProjOneScreen4 from "./asset/ProjOneScreen4.png";
-import ProjOneScreen5 from "./asset/ProjOneScreen5.png";
-import ProjOneFindings1 from "./asset/ProjOneFindings1.png";
-import ProjOneFindings2 from "./asset/ProjOneFindings2.png";
-import ProjOneFindings3 from "./asset/ProjOneFindings3.png";
-import ProjOnePrototype from "./asset/ProjOnePrototype.png";
-import ProjOneResponsive from "./asset/ProjOneResponsive.png";
-import ProjOneSitemap from "./asset/ProjOneSitemap.jpeg";
-
 const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
@@ -74,10 +59,6 @@ function ProjectThree() {
     { section: "ResponsiveDesign", ref: responsivedesignRef },
     { section: "Conclusion", ref: conclusionRef },
   ];
-
-//   useEffect(() => {
-//     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-//     }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -557,12 +538,12 @@ function ProjectThree() {
 
                 <div className="projone-footer">
                     <div className="footer-list">
-                        <a href="https://www.behance.net/jingwenng2">
+                        <a href="https://www.behance.net/jingwenng2" target="_blank">
                         <div className="footer-behance"/>
                         </a>
                     </div>
                     <div className="footer-list">
-                        <a href="https://www.linkedin.com/in/jingwen-ng/">
+                        <a href="https://www.linkedin.com/in/jingwen-ng/" target="_blank">
                             <div className="footer-linkedin"/>
                         </a>
                     </div>

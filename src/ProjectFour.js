@@ -337,12 +337,12 @@ function ProjectFour() {
 
                 <div className="projone-footer">
                     <div className="footer-list">
-                        <a href="https://www.behance.net/jingwenng2">
+                        <a href="https://www.behance.net/jingwenng2" target="_blank">
                         <div className="footer-behance"/>
                         </a>
                     </div>
                     <div className="footer-list">
-                        <a href="https://www.linkedin.com/in/jingwen-ng/">
+                        <a href="https://www.linkedin.com/in/jingwen-ng/" target="_blank">
                             <div className="footer-linkedin"/>
                         </a>
                     </div>
