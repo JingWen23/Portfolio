@@ -172,7 +172,7 @@ const Home = () => {
 
         <div className="footer">
           <div className="footer-list">
-            <a href="https://drive.google.com/file/d/1NTr7ehUjws0L0CQPSluDE_OXJKPVT4LF/view?usp=sharing">
+            <a href="https://www.behance.net/jingwenng2">
               <div className="footer-behance"/>
             </a>
           </div>
