@@ -347,7 +347,7 @@ li {
 }
 
 @media (max-width: 480px) { 
-  .wrapper-grid,.home-project-grid, .footer {
+  .wrapper-grid,.home-project-grid{
     display: none;
   }
 
