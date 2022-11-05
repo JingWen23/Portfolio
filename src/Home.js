@@ -121,7 +121,7 @@ const Home = () => {
                     <p className="content-subtitle">Figma | React Native | UX Design | Coding</p>
 							</div>  
             </Link>
-            <Link to="/project/3" className="proj-one">
+            <Link to="/project/4" className="proj-one">
               <div className="overlay"></div>
                 <img src={HomeProjFourCover} className="home-sample-img" alt="Logo" />
                   <div class="content-details fadeIn-bottom">
