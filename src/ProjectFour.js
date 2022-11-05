@@ -49,9 +49,9 @@ function ProjectFour() {
     { section: "Conclusion", ref: conclusionRef },
   ];
 
-//   useEffect(() => {
-//     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-//     }, []);
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
 
   useEffect(() => {
     const handleScroll = () => {
