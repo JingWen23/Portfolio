@@ -1,16 +1,10 @@
 
-import React, {useEffect, useState, useRef} from 'react';
-import { render } from "react-dom";
-import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
-import HomeIntro from "./asset/HomeIntro.png";
+import React, {useEffect} from 'react';
 import AboutIntro from "./asset/AboutIntro.png";
-import Logo from "./asset/Logo.png";
-import ButtonMailTo from "./component/ButtonMailTo";
 import AboutPS from "./asset/AboutPS.png";
 import AboutXD from "./asset/AboutXD.png";
 import AboutFigma from "./asset/AboutFigma.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NavMenu from "./component/NavMenu";
 import "./App.css";
 
@@ -19,13 +13,6 @@ function About() {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
-
-  const scrollToSection = (elementRef) => {
-        window.scrollTo({
-          top: elementRef.current.offsetTop,
-          behavior: "smooth",
-        });
-      };
 
     return (
     <div>
@@ -69,7 +56,7 @@ function About() {
                 <div class="about-content">
                   <p className="about-titleone">"Tiny Details Matter"</p>
                   <p className="about-titletwo">I believe that the finer details within a product design is what makes it great. These tiny details are what create an entirely different and immersive experience for users. I aim to design and create impactful products that raises awareness on subjects we often neglect.</p>
-                  <img src={AboutIntro} className="about-intro-img" alt="Logo" />
+                  <img src={AboutIntro} className="about-intro-img" alt="A cartoon of me surrounded by my hobbies" />
                 </div>
             </section>
 
@@ -137,7 +124,7 @@ function About() {
                 <tbody>
                   <tr>
                     <td>
-                      <img src={AboutXD} className="about-software-img" alt="Logo" />
+                      <img src={AboutXD} className="about-software-img" alt="Logo of Adobe XD logo with the level of experience" />
                     </td>
                   </tr>
                   <tr>
@@ -146,7 +133,7 @@ function About() {
                   </tr>
                   <tr>
                     <td>
-                      <img src={AboutPS} className="about-software-img" alt="Logo" />
+                      <img src={AboutPS} className="about-software-img" alt="Logo of Adobe Photoshop with the level of experience" />
                     </td>
                   </tr>
                   <tr>
@@ -155,7 +142,7 @@ function About() {
                   </tr>
                   <tr>
                     <td>
-                      <img src={AboutFigma} className="about-software-img" alt="Logo" />
+                      <img src={AboutFigma} className="about-software-img" alt="Logo of Figma with the level of experience" />
                     </td>
                   </tr>
                 </tbody>
@@ -204,7 +191,7 @@ function About() {
             <div className="about-phone-wrapper-grid">
                   <p className="about-titleone">"Tiny Details Matter"</p>
                   <p className="about-titletwo">I believe that the finer details within a product design is what makes it great. These tiny details are what create an entirely different and immersive experience for users. I aim to design and create impactful products that raises awareness on subjects we often neglect.</p>
-                  <img src={AboutIntro} className="about-intro-img" alt="Logo" />
+                  <img src={AboutIntro} className="about-intro-img" alt="A cartoon of me surrounded by my hobbies" />
             </div>
 
             <div className="education-phone-wrapper-grid">

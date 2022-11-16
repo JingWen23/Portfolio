@@ -1,34 +1,13 @@
 // import { Link } from "react-router-dom";
-import React, {useEffect, useState, useRef} from 'react';
-import { render } from "react-dom";
-import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
+import React, {useEffect} from 'react';
 import HomeIntro from "./asset/HomeIntro.png";
-import Logo from "./asset/Logo.png";
 import HomeProjOneCover from "./asset/HomeProjOneCover.jpg";
 import HomeProjTwoCover from "./asset/HomeProjTwoCover.jpg";
 import HomeProjThreeCover from "./asset/HomeProjThreeCover.jpg";
 import HomeProjFourCover from "./asset/HomeProjFourCover.jpg";
-import FooterEmail from "./asset/FooterEmail.png";
-import FooterLinkedIn from "./asset/FooterLinkedIn.png";
-import FooterBehance from "./asset/FooterBehance.png";
-import FooterEmailHover from "./asset/FooterEmail.png";
-import FooterLinkedInHover from "./asset/FooterLinkedIn.png";
-import FooterBehanceHover from "./asset/FooterBehance.png";
-import ProjFiveCover from "./asset/ProjFiveCover.jpg";
-import ButtonMailTo from "./component/ButtonMailTo";
 import { Link, NavLink } from "react-router-dom";
 import NavMenu from './component/NavMenu';
 import "./App.css";
-
-
-
-const contentStyle = {
-  
-      background: "rgba(255,255,255,0",
-      width: "80%",
-      border: "none"
-    };
 
 const Home = () => {
 
@@ -82,7 +61,7 @@ const Home = () => {
           </div>
           <div className="two">
             <h5 className="home-titletwo">Hello.</h5>
-            <p className="home-titlefour">I’m a ux designer and an app develop based in Sydney, Australia. I am passionate in producing creations that can bring an impact to the society and is constantly searching for opportunities to further develop my skills.</p>
+            <p className="home-titlefour">I’m a ux designer and an app developer based in Sydney, Australia. I am passionate in producing creations that can bring an impact to the society and is constantly searching for opportunities to further develop my skills.</p>
           </div>
         </div>
 
@@ -90,7 +69,7 @@ const Home = () => {
           <div className="phone-home-intro-container">
           <img src={HomeIntro} className="phone-home-intro-img" alt="Logo" />
           <h5 className="home-titletwo">Hello.</h5>
-          <p className="home-titlefour">I’m a ux designer and an app develop based in Sydney, Australia. I am passionate in producing creations that can bring an impact to the society and is constantly searching for opportunities to further develop my skills.</p>
+          <p className="home-titlefour">I’m a ux designer and an app developer based in Sydney, Australia. I am passionate in producing creations that can bring an impact to the society and is constantly searching for opportunities to further develop my skills.</p>
           </div>
         </div>
 
@@ -99,7 +78,7 @@ const Home = () => {
           <div className="home-sample-grid">
             <Link to="/project/3" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjOneCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjOneCover} className="home-sample-img" alt="A cover for the pet adoption site" />
                   <div class="content-details fadeIn-bottom">
                     <h2 class="content-title">Pet Adoption Website</h2>
                     <p className="content-subtitle">Figma | UX Design</p>
@@ -107,7 +86,7 @@ const Home = () => {
             </Link>
             <Link to="/project/1" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjTwoCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjTwoCover} className="home-sample-img" alt="A cover for the medicine reminder app and responsive website" />
                   <div class="content-details fadeIn-bottom">
 								    <h2 class="content-title">Medicine Reminder App and Responsive Website</h2>
                     <p className="content-subtitle">Figma | UX Design</p>
@@ -115,7 +94,7 @@ const Home = () => {
             </Link>
             <Link to="/project/2" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjThreeCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjThreeCover} className="home-sample-img" alt="A cover of the memory collection app" />
                   <div class="content-details fadeIn-bottom">
 								    <h2 class="content-title">Memory Collection App</h2>
                     <p className="content-subtitle">Figma | React Native | UX Design | Coding</p>
@@ -123,7 +102,7 @@ const Home = () => {
             </Link>
             <Link to="/project/4" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjFourCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjFourCover} className="home-sample-img" alt="A cover of the bakery shopping website" />
                   <div class="content-details fadeIn-bottom">
                     <h2 class="content-title">Bakery Shopping Website</h2>
                     <p className="content-subtitle">Figma | React JS | UX Design | Coding</p>
@@ -137,7 +116,7 @@ const Home = () => {
           <div className="phone-home-sample-grid">
             <Link to="/project/3" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjOneCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjOneCover} className="home-sample-img" alt="A cover for the pet adoption site" />
                   <div class="content-details fadeIn-bottom">
                     <h2 class="content-title">Pet Adoption Website</h2>
                     <p className="content-subtitle">Figma | UX Design</p>
@@ -145,7 +124,7 @@ const Home = () => {
             </Link>
             <Link to="/project/1" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjTwoCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjTwoCover} className="home-sample-img" alt="A cover for the medicine reminder app and responsive website" />
                   <div class="content-details fadeIn-bottom">
 								    <h2 class="content-title">Medicine Reminder App and Responsive Website</h2>
                     <p className="content-subtitle">Figma | UX Design</p>
@@ -153,7 +132,7 @@ const Home = () => {
             </Link>
             <Link to="/project/2" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjThreeCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjThreeCover} className="home-sample-img" alt="A cover for the memory collection app" />
                   <div class="content-details fadeIn-bottom">
 								    <h2 class="content-title">Memory Collection App</h2>
                     <p className="content-subtitle">Figma | React Native | UX Design | Coding</p>
@@ -161,7 +140,7 @@ const Home = () => {
             </Link>
             <Link to="/project/4" className="proj-one">
               <div className="overlay"></div>
-                <img src={HomeProjFourCover} className="home-sample-img" alt="Logo" />
+                <img src={HomeProjFourCover} className="home-sample-img" alt="A cover for the bakery shopping website" />
                   <div class="content-details fadeIn-bottom">
                     <h2 class="content-title">Bakery Shopping Website</h2>
                     <p className="content-subtitle">Figma | React JS | UX Design | Coding</p>

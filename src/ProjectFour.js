@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import NavMenu from "./component/NavMenu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ProjFourIntro from "./asset/ProjFourIntro.mp4";
 import ProjFourHome from "./asset/ProjFourHome.png"
 import ProjFourMenu from "./asset/ProjFourMenu.png"
@@ -247,7 +247,7 @@ function ProjectFour() {
                                 <p className="proj-section-content">The screen presents a series of famous products from the shop to attract customers’ attention.</p>
                             </div>
                         </div>
-                        <img src={ProjFourHome} className="projthree-screens-img" alt="Logo" />
+                        <img src={ProjFourHome} className="projthree-screens-img" alt="The home screen of the page" />
                               
                     </div>
 
@@ -258,7 +258,7 @@ function ProjectFour() {
                                 <p className="proj-section-content">All products are displayed in a grid system, along with a search bar where users can filter specific items.</p>
                             </div>
                         </div>
-                        <img src={ProjFourMenu} className="projthree-screens-img" alt="Logo" />
+                        <img src={ProjFourMenu} className="projthree-screens-img" alt="The menu screen of the page" />
                     </div>
 
                     <div className="projfour-section-five-phone">
@@ -268,7 +268,7 @@ function ProjectFour() {
                                     <p className="proj-section-content">Item description is provided with reviews from previous customers.</p>
                                   </div>
                               </div>
-                        <img src={ProjFourDetail} className="projthree-screens-img" alt="Logo" /> 
+                        <img src={ProjFourDetail} className="projthree-screens-img" alt="The product detail screen of the page" /> 
                     </div>
 
                     <div className="projfour-section-five-phone">
@@ -278,12 +278,12 @@ function ProjectFour() {
                                 <p className="proj-section-content">A series of questions with answers are displayed, accompanied by a form that sllows user to send questions to the site ownder through email.</p>
                             </div>
                         </div>
-                        <img src={ProjFourFAQ} className="projthree-screens-img" alt="Logo" />
+                        <img src={ProjFourFAQ} className="projthree-screens-img" alt="The FAQ screen of the page" />
                               
                     </div>
 
                     <div className="projfour-section-design">
-                        <img src={ProjFourHome} className="projfour-screens-img" alt="Logo" />
+                        <img src={ProjFourHome} className="projfour-screens-img" alt="The home screen of the page" />
                               <div className="proj-section-five-text-container">
                                   <div className="proj-section-five-content">
                                       <p className="proj-section-table-title">Home Screen</p>
@@ -298,10 +298,10 @@ function ProjectFour() {
                                       <p className="proj-section-content">All products are displayed in a grid system, along with a search bar where users can filter specific items.</p>
                                   </div>
                               </div>
-                              <img src={ProjFourMenu} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjFourMenu} className="projthree-screens-img" alt="The menu screen of the page" />
                           </div>
                           <div className="projfour-design-section-three">
-                              <img src={ProjFourDetail} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjFourDetail} className="projthree-screens-img" alt="The product detail screen of the page" />
                               <div className="proj-section-five-text-container">
                                   <div className="proj-section-five-content">
                                       <p className="proj-section-table-title">Product Detail Screen</p>
@@ -317,7 +317,7 @@ function ProjectFour() {
                                       <p className="proj-section-content">A series of questions with answers are displayed, accompanied by a form that sllows user to send questions to the site ownder through email.</p>
                                   </div>
                               </div>
-                              <img src={ProjFourFAQ} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjFourFAQ} className="projthree-screens-img" alt="The FAQ screen of the page" />
                           </div>
                 </div>
 

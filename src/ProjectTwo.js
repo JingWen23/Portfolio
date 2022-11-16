@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import NavMenu from "./component/NavMenu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ProjTwoIntro from "./asset/ProjTwoIntro.mp4";
 import ProjTwoStoryboard from "./asset/ProjTwoStoryboard.jpeg";
 import ProjTwoWireframe1 from "./asset/ProjTwoWireframe1.jpg";
@@ -235,7 +235,7 @@ function ProjectOne() {
                         <p className="projtwo-section-name">Project Outline</p>
                     </div>
                     <p className="proj-section-content">A storyboard was drawn to indicate the relationship and interactions between each screens.</p>
-                    <img src={ProjTwoStoryboard} className="projtwo-storyboard-img" alt="Logo" />
+                    <img src={ProjTwoStoryboard} className="projtwo-storyboard-img" alt="An image of the storyboard" />
                 </div>
 
 
@@ -251,13 +251,13 @@ function ProjectOne() {
                            <p className="proj-section-content">The first set of wireframes constructed focuses on the main functionalities of the app.</p>
                        </div>
                        <div>
-                           <img src={ProjTwoWireframe1} className="projtwo-wireframe-img" alt="Logo" />
+                           <img src={ProjTwoWireframe1} className="projtwo-wireframe-img" alt="An image of the digital wireframes" />
                        </div>
                    </div>
 
                    <div className="projtwo-section-three-two">
                        <div>
-                           <img src={ProjTwoWireframe2} className="projtwo-wireframe-img" alt="Logo" />
+                           <img src={ProjTwoWireframe2} className="projtwo-wireframe-img" alt="An image of the digital wireframes" />
                        </div>
                        <div>
                            <p className="proj-section-content">Additional screens were later on added to create the entire flow a user would experience when utilising the app.</p>
@@ -270,12 +270,12 @@ function ProjectOne() {
                            <p className="proj-section-content">The first set of wireframes constructed focuses on the main functionalities of the app.</p>
                        </div>
                        <div>
-                           <img src={ProjTwoWireframe1} className="projtwo-wireframe-img" alt="Logo" />
+                           <img src={ProjTwoWireframe1} className="projtwo-wireframe-img" alt="An image of the digital wireframes" />
                        </div>
 
                        <div>
                         <p className="proj-section-content">Additional screens were later on added to create the entire flow a user would experience when utilising the app.</p>
-                           <img src={ProjTwoWireframe2} className="projtwo-wireframe-img" alt="Logo" />
+                           <img src={ProjTwoWireframe2} className="projtwo-wireframe-img" alt="An image of the digital wireframes" />
                        </div>
                    </div>
                 </div>
@@ -289,10 +289,10 @@ function ProjectOne() {
                     <div className="projtwo-section-four-flex-container" data-aos="fade-in">
                       <div class="projtwo-flex-subcontainer">
                           <div className="flex-component">
-                              <img src={ProjTwoLogin} className="projtwo-login-img" alt="Logo" />
+                              <img src={ProjTwoLogin} className="projtwo-login-img" alt="An image of the login screen" />
                           </div>
                           <div className="flex-component">
-                              <img src={ProjTwoProfile} className="projtwo-login-img" alt="Logo" />
+                              <img src={ProjTwoProfile} className="projtwo-login-img" alt="An image of the login screen" />
                           </div>
                       </div>
                       <div class="projtwo-flex-subcontainer">
@@ -305,7 +305,7 @@ function ProjectOne() {
                               </div>
                           </div>
                           <div className="flex-component">
-                              <img src={ProjTwoSplash} className="projtwo-splash-img" alt="Logo" />
+                              <img src={ProjTwoSplash} className="projtwo-splash-img" alt="An image of the splash screen" />
                           </div>
                           <div className="flex-component">
                               <div className="projtwo-section-four-text-container">
@@ -329,13 +329,13 @@ function ProjectOne() {
                               </div>
                           </div>
                           <div className="flex-component">
-                              <img src={ProjTwoHome} className="projtwo-login-img" alt="Logo" />
+                              <img src={ProjTwoHome} className="projtwo-login-img" alt="An image of the home screen" />
                           </div>
                       </div>
                       <div class="projtwo-flex-subcontainer">
-                        
+
                           <div className="flex-component">
-                              <img src={ProjTwoAlbum} className="projtwo-splash-img" alt="Logo" />
+                              <img src={ProjTwoAlbum} className="projtwo-splash-img" alt="An image of the album screen" />
                           </div>
                       </div>
                   </div>
@@ -343,12 +343,12 @@ function ProjectOne() {
                   <div className="projtwo-section-fourthree-flex-container" data-aos="fade-in">
                       <div class="projtwo-flex-subcontainer">
                           <div className="flex-component">
-                              <img src={ProjTwoDetail} className="projtwo-login-img" alt="Logo" />
+                              <img src={ProjTwoDetail} className="projtwo-login-img" alt="An image of the detail screen" />
                           </div>
                       </div>
                       <div class="projtwo-flex-subcontainer">
                           <div className="flex-component">
-                              <img src={ProjTwoAdd} className="projtwo-splash-img" alt="Logo" />
+                              <img src={ProjTwoAdd} className="projtwo-splash-img" alt="An image of teh add memory screen" />
                           </div>
                           <div className="flex-component">
                               <div className="projtwo-section-four-text-container">

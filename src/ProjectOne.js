@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import NavMenu from "./component/NavMenu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ProjOneIntro from "./asset/ProjOneIntro.mp4";
 import ProjOnePersona from "./asset/ProjOnePersona.png";
 import ProjOneScreen1 from "./asset/ProjOneScreen1.jpg";
@@ -263,13 +263,13 @@ function ProjectOne() {
                     
                     <h5 className="proj-section-subtitle">Digital Wireframes</h5>
                     <p className="proj-section-content">The first set of wireframes focuses on the screens users would encounter when adding a new medicine reminder.</p>
-                    <img src={ProjOneScreen1} className="projone-screen-one-img" alt="Logo" />
+                    <img src={ProjOneScreen1} className="projone-screen-one-img" alt="An image of two digital wireframes" />
        
                     <div className="proj-section-spacing">
                         <h5 className="proj-section-subtitle">Low Fidelity Prototype</h5>
                         <p className="proj-section-content">To prepare for usability testing, a low-fidelity prototype that displays the user flow of adding a medicine is created.</p>
                         <a href="https://www.figma.com/proto/4n0Vlmply8Lwk7AsQSUGRd/Google-UX-2?page-id=70%3A1354&node-id=70%3A1466&viewport=370%2C521%2C0.22&scaling=scale-down&starting-point-node-id=70%3A1466" target="_blank" className="proj-link-button">Click here to view the complete lo-fi prototype +</a>
-                        <img src={ProjOnePrototype} className="projone-prototype-img" alt="Logo" />
+                        <img src={ProjOnePrototype} className="projone-prototype-img" alt="An image displaying the low fidelity prototype" />
                     </div>
 
                 </div>
@@ -340,15 +340,15 @@ function ProjectOne() {
                                 <thead>
                                     <tr>
                                         <th>
-                                            <img src={ProjOneFindings1} className="projone-findings-img" alt="Logo" />
+                                            <img src={ProjOneFindings1} className="projone-findings-img" alt="An icon with empty label" />
                                         </th>
                                         <td></td>
                                         <th>
-                                            <img src={ProjOneFindings2} className="projone-findings-img" alt="Logo" />
+                                            <img src={ProjOneFindings2} className="projone-findings-img" alt="An icon of a pill" />
                                         </th>
                                         <td></td>
                                         <th>
-                                            <img src={ProjOneFindings3} className="projone-findings-img-sub" alt="Logo" />
+                                            <img src={ProjOneFindings3} className="projone-findings-img-sub" alt="An icon of an editable reminder" />
                                         </th>
                                     </tr>
                                 </thead>
@@ -374,17 +374,17 @@ function ProjectOne() {
 
                                 <div className="projone-methodology-phone">
                                 <div className="methodology-partone">
-                                    <img src={ProjOneFindings1} className="projone-findings-img" alt="Logo" />
+                                    <img src={ProjOneFindings1} className="projone-findings-img" alt="An icon with empty label" />
                                     <p className="proj-section-findings-content-one">Label icons</p>
                                     <p className="proj-section-findings-content-two">People prefer using labelled icons when navigating.</p>
                                 </div>
                                 <div className="methodology-partone">
-                                    <img src={ProjOneFindings2} className="projone-findings-img" alt="Logo" />
+                                    <img src={ProjOneFindings2} className="projone-findings-img" alt="An icon of a pill" />
                                     <p className="proj-section-findings-content-one">Add medicine appearance</p>
                                     <p className="proj-section-findings-content-two">People would like to select how the medicine look like.</p>
                                 </div>
                                 <div className="methodology-partone">
-                                    <img src={ProjOneFindings3} className="projone-findings-img-sub" alt="Logo" />
+                                    <img src={ProjOneFindings3} className="projone-findings-img-sub" alt="An icon of an editable reminder" />
                                     <p className="proj-section-findings-content-one">Edit Reminders</p>
                                     <p className="proj-section-findings-content-two">People would like to edit the info they’ve added for their reminders.</p>
                                 </div>
@@ -406,7 +406,7 @@ function ProjectOne() {
 
                        <div>
                            <div className="projone-section-five">
-                               <img src={ProjOneScreen2} className="projone-screens-img" alt="Logo" />
+                               <img src={ProjOneScreen2} className="projone-screens-img" alt="An image of the home screen" />
                                <div className="proj-section-five-text-container">
                                    <div className="proj-section-five-content">
                                        <p className="proj-section-table-title">Home Screen</p>
@@ -421,10 +421,10 @@ function ProjectOne() {
                                        <p className="proj-section-content">Users can select how frequent they need to eat the medicine to set a repetitive alarm.</p>
                                    </div>
                                </div>
-                               <img src={ProjOneScreen3} className="projone-screens-img" alt="Logo" />
+                               <img src={ProjOneScreen3} className="projone-screens-img" alt="An image of the frequency screen" />
                            </div>
                            <div className="projone-section-five">
-                               <img src={ProjOneScreen4} className="projone-screens-img" alt="Logo" />
+                               <img src={ProjOneScreen4} className="projone-screens-img" alt="An image of the pill appearance screen" />
                                <div className="proj-section-five-text-container">
                                    <div className="proj-section-five-content">
                                        <p className="proj-section-table-title">Pill Appearance</p>
@@ -439,7 +439,7 @@ function ProjectOne() {
                                        <p className="proj-section-content">Users can review the details of the reminder set before confirmation.</p>
                                    </div>
                                </div>
-                               <img src={ProjOneScreen5} className="projone-screens-img" alt="Logo" />
+                               <img src={ProjOneScreen5} className="projone-screens-img" alt="A image of the reminder review screen" />
                            </div>
 
 
@@ -459,7 +459,7 @@ function ProjectOne() {
 
                     <p className="proj-section-content">The app’s sitemap was used as a guideline to draw out the organizational structure of each screen’s to ensure that the design is consistent across devices.</p>
                     <a href={ProjOneSitemap} target="_blank" className="proj-link-button">Click here to view the sitemap +</a>
-                    <img src={ProjOneResponsive} className="projone-screen-responsive-img" alt="Logo" />
+                    <img src={ProjOneResponsive} className="projone-screen-responsive-img" alt="An image of the app's homescreen on tablet and laptop" />
 
                 </div>
 

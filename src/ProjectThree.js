@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import NavMenu from "./component/NavMenu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ProjThreeIntro from "./asset/ProjThreeIntro.mp4";
 import ProjThreePersona from "./asset/ProjThreePersona.png";
 
@@ -259,15 +259,15 @@ function ProjectThree() {
                       <div className="projthree-section-three-container">
                           <h5 className="projthree-section-subtitle">Paper Wireframes</h5>
                           <p className="proj-section-content">Paper wireframes were sketched for each screen of the website. Different designs were constructed to explore the possibilities. </p>
-                          <img src={ProjThreePaperWireframe} className="projone-prototype-img" alt="Logo" />
+                          <img src={ProjThreePaperWireframe} className="projone-prototype-img" alt="An image of the paper wireframes" />
                       </div>
                       <div className="projthree-section-three-container">
                           <h5 className="projthree-section-subtitle">Digital Wireframes</h5>
                           <p className="proj-section-content">The first set of wireframes contains screens on the user flow of making an appointment to adopt a pet.</p>
-                          <img src={ProjThreeDigitalWireframe} className="projone-prototype-img" alt="Logo" />
+                          <img src={ProjThreeDigitalWireframe} className="projone-prototype-img" alt="An image of the digital wireframes" />
 
                           <p className="proj-section-content content-spacing">Different size variations were also drawn to accomodate users needs on different devices.</p>
-                          <img src={ProjThreeDigitalWireframeSmall} className="projone-prototype-img" alt="Logo" />
+                          <img src={ProjThreeDigitalWireframeSmall} className="projone-prototype-img" alt="An image of the digital wireframes on a smaller screen" />
                       </div>
                       <div>
                           <h5 className="projthree-section-subtitle content-spacing">Low-Fidelity Prototype</h5>
@@ -351,11 +351,11 @@ function ProjectThree() {
                                 <thead>
                                     <tr>
                                         <th>
-                                            <img src={ProjThreeFindings2} className="projthree-findings-img" alt="Logo" />
+                                            <img src={ProjThreeFindings2} className="projthree-findings-img" alt="An icon with a pen on a paper" />
                                         </th>
                                         <td></td>
                                         <th>
-                                            <img src={ProjThreeFindings1} className="projthree-findings-img-sub" alt="Logo" />
+                                            <img src={ProjThreeFindings1} className="projthree-findings-img-sub" alt="An icon of a star" />
                                         </th>
                                         <td></td>
                                     </tr>
@@ -378,12 +378,12 @@ function ProjectThree() {
 
                                 <div className="projone-methodology-phone">
                                 <div className="methodology-partone">
-                                    <img src={ProjThreeFindings2} className="projthree-findings-img" alt="Logo" />
+                                    <img src={ProjThreeFindings2} className="projthree-findings-img" alt="An icon with a pen on a paper" />
                                     <p className="proj-section-findings-content-one">Review Details</p>
                                     <p className="proj-section-findings-content-two">Users prefer to review the details of their appointment before confirming it. </p>
                                 </div>
                                 <div className="methodology-partone">
-                                    <img src={ProjThreeFindings1} className="projthree-findings-img" alt="Logo" />
+                                    <img src={ProjThreeFindings1} className="projthree-findings-img" alt="An icon of a star" />
                                     <p className="proj-section-findings-content-one">Wish List</p>
                                     <p className="proj-section-findings-content-two">Users seek for a button where they can click to save the pet under their list while browsing through the other ones.</p>
                                 </div>
@@ -405,7 +405,7 @@ function ProjectThree() {
 
                     <div>
                           <div className="projthree-section-five">
-                              <img src={ProjThreeHome} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreeHome} className="projthree-screens-img" alt="An image of the home screen" />
                               <div className="proj-section-five-text-container">
                                   <div>
                                       <p className="proj-section-table-title">Home Screen</p>
@@ -414,7 +414,7 @@ function ProjectThree() {
                               </div>
                           </div>
                           <div className="projthree-section-five-phone">
-                              <img src={ProjThreePetSelection} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreePetSelection} className="projthree-screens-img" alt="An image of the pet selection screen" />
                               <div className="proj-section-five-text-container">
                                   <div>
                                       <p className="proj-section-table-title">Pet Selection Screen</p>
@@ -429,10 +429,10 @@ function ProjectThree() {
                                       <p className="proj-section-content">Users are presented with different photos of pets for adoption, along with their breeds and names.</p>
                                   </div>
                               </div>
-                              <img src={ProjThreePetSelection} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreePetSelection} className="projthree-screens-img" alt="An image of the pet selection screen" />
                           </div>
                           <div className="projthree-section-five">
-                              <img src={ProjThreeTimeSelection} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreeTimeSelection} className="projthree-screens-img" alt="An image of the appointment selection screen" />
                               <div className="proj-section-five-text-container">
                                   <div>
                                       <p className="proj-section-table-title">Appointment Selction Screen</p>
@@ -447,10 +447,10 @@ function ProjectThree() {
                                       <p className="proj-section-content">The screen provides the details of the appointment before user proceeds to complete their appointment.</p>
                                   </div>
                               </div>
-                              <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="An image of the confirmation screen" />
                           </div>
                           <div className="projthree-section-five-phone">
-                              <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="Logo" />
+                              <img src={ProjThreeConfirmation} className="projthree-screens-img" alt="An image of the confirmation screen" />
                               <div className="proj-section-five-text-container">
                                   <div className="proj-section-five-content">
                                       <p className="proj-section-table-title">Confirmation Screen</p>
@@ -479,11 +479,11 @@ function ProjectThree() {
                                 <thead>
                                     <tr>
                                         <th>
-                                            <img src={FontSize} className="projthree-accessibility-img" alt="Logo" />
+                                            <img src={FontSize} className="projthree-accessibility-img" alt="An icon of font size" />
                                         </th>
                                         <td></td>
                                         <th>
-                                            <img src={Contrast} className="projthree-accessibility-img" alt="Logo" />
+                                            <img src={Contrast} className="projthree-accessibility-img" alt="An icon of colour contrast" />
                                         </th>
                                         <td></td>
                                     </tr>
@@ -506,12 +506,12 @@ function ProjectThree() {
 
                                 <div className="projone-methodology-phone">
                                 <div className="methodology-partone">
-                                    <img src={FontSize} className="projthree-accessibility-img" alt="Logo" />
+                                    <img src={FontSize} className="projthree-accessibility-img" alt="An icon of font size" />
                                     <p className="proj-section-findings-content-one">Font Size</p>
                                     <p className="proj-section-findings-content-two">Different font sizes were used to direct users’ attention to important information.</p>
                                 </div>
                                 <div className="methodology-partone">
-                                    <img src={Contrast} className="projthree-accessibility-img" alt="Logo" />
+                                    <img src={Contrast} className="projthree-accessibility-img" alt="An icon of colour contrast" />
                                     <p className="proj-section-findings-content-one">Color Contrast</p>
                                     <p className="proj-section-findings-content-two">High colour contrast applied to elements that require users’ attention. </p>
                                 </div>
